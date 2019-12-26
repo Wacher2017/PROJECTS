@@ -1,0 +1,1183 @@
+2019-12-23 16:44:03.215 [] [::] [main] INFO  - Starting CMDBApplication on win7-PC with PID 26900 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 16:44:03.241 [] [::] [main] DEBUG - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 16:44:03.241 [] [::] [main] INFO  - No active profile set, falling back to default profiles: default
+2019-12-23 16:44:04.989 [] [::] [main] INFO  - Tomcat initialized with port(s): 8088 (http)
+2019-12-23 16:44:05.009 [] [::] [main] INFO  - Starting service [Tomcat]
+2019-12-23 16:44:05.010 [] [::] [main] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 16:44:05.125 [] [::] [main] INFO  - Initializing Spring embedded WebApplicationContext
+2019-12-23 16:44:05.130 [] [::] [main] INFO  - Root WebApplicationContext: initialization completed in 1733 ms
+2019-12-23 16:44:05.582 [] [::] [main] INFO  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 16:44:05.653 [] [::] [main] INFO  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 16:44:05.748 [] [::] [main] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 16:44:05.875 [] [::] [main] INFO  - Context refreshed
+2019-12-23 16:44:05.897 [] [::] [main] INFO  - Found 1 custom documentation plugin(s)
+2019-12-23 16:44:05.932 [] [::] [main] INFO  - Scanning for api listing references
+2019-12-23 16:44:06.128 [] [::] [main] INFO  - Generating unique operation named: handleUsingGET_1
+2019-12-23 16:44:06.134 [] [::] [main] INFO  - Generating unique operation named: handleUsingGET_2
+2019-12-23 16:44:06.174 [] [::] [main] INFO  - Stopping service [Tomcat]
+2019-12-23 16:44:06.179 [] [::] [main] WARN  - The web application [ROOT] appears to have started a thread named [logback-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1081)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2019-12-23 16:44:06.179 [] [::] [main] WARN  - The web application [ROOT] appears to have started a thread named [logback-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1081)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2019-12-23 16:44:06.187 [] [::] [main] INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 16:44:06.192 [] [::] [main] ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 16:44:06.195 [] [::] [main] INFO  - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 16:53:30.124  INFO 12540 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 12540 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 16:53:30.131 DEBUG 12540 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 16:53:30.132  INFO 12540 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 16:53:31.754  INFO 12540 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 16:53:31.765  INFO 12540 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 16:53:31.765  INFO 12540 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 16:53:31.878  INFO 12540 [main] o.a.c.c.C.[Tomcat].[localhost].[/]       173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 16:53:31.878  INFO 12540 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1705 ms
+2019-12-23 16:53:32.313  INFO 12540 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 16:53:32.365  INFO 12540 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 16:53:32.430  INFO 12540 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 16:53:32.532  INFO 12540 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 16:53:32.550  INFO 12540 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 16:53:32.584  INFO 12540 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 16:53:32.778  INFO 12540 [main] .d.s.w.r.o.CachingOperationNameGenerator 40 : Generating unique operation named: handleUsingGET_1
+2019-12-23 16:53:32.780  INFO 12540 [main] .d.s.w.r.o.CachingOperationNameGenerator 40 : Generating unique operation named: handleUsingGET_2
+2019-12-23 16:53:32.816  INFO 12540 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 16:53:32.823  INFO 12540 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 16:53:32.828 ERROR 12540 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 16:53:32.830  INFO 12540 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 17:41:04.957  INFO 28444 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28444 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 17:41:04.964 DEBUG 28444 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 17:41:04.965  INFO 28444 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 17:41:06.623  INFO 28444 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 17:41:06.635  INFO 28444 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 17:41:06.636  INFO 28444 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 17:41:06.755  INFO 28444 [main] o.a.c.c.C.[Tomcat].[localhost].[/]       173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 17:41:06.756  INFO 28444 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1753 ms
+2019-12-23 17:41:06.945  WARN 28444 [main] ConfigServletWebServerApplicationContext 558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swagger2Config': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'swagger.title' in value "${swagger.title}"
+2019-12-23 17:41:06.948  INFO 28444 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 17:41:06.961  INFO 28444 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 17:41:06.968 ERROR 28444 [main] o.s.boot.SpringApplication               826 : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swagger2Config': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'swagger.title' in value "${swagger.title}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.flock.cmdb.CMDBApplication.main(CMDBApplication.java:17)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'swagger.title' in value "${swagger.title}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:908)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 17 common frames omitted
+
+2019-12-23 17:47:14.625  INFO 24976 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 24976 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 17:47:14.631 DEBUG 24976 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 17:47:14.632  INFO 24976 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 17:47:16.259  INFO 24976 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 17:47:16.267  INFO 24976 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 17:47:16.268  INFO 24976 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 17:47:16.376  INFO 24976 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 17:47:16.377  INFO 24976 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1710 ms
+2019-12-23 17:47:16.799  INFO 24976 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 17:47:16.861  INFO 24976 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 17:47:16.874  INFO 24976 [main] c.f.c.config.log.SpringBootPlusConfig    31 : init LogAop success
+2019-12-23 17:47:16.964  INFO 24976 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 17:47:17.145  INFO 24976 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 17:47:17.160  INFO 24976 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 17:47:17.183  INFO 24976 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 17:47:17.211  INFO 24976 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 17:47:17.217  INFO 24976 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 17:47:17.220 ERROR 24976 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 17:47:17.223  INFO 24976 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 17:48:43.443  INFO 28412 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28412 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 17:48:43.451 DEBUG 28412 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 17:48:43.451  INFO 28412 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 17:48:45.168  INFO 28412 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 17:48:45.177  INFO 28412 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 17:48:45.177  INFO 28412 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 17:48:45.285  INFO 28412 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 17:48:45.286  INFO 28412 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1788 ms
+2019-12-23 17:48:45.711  INFO 28412 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 17:48:45.770  INFO 28412 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 17:48:45.783  INFO 28412 [main] c.f.c.config.log.SpringBootPlusConfig    31 : init LogAop success
+2019-12-23 17:48:45.869  INFO 28412 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 17:48:46.050  INFO 28412 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 17:48:46.065  INFO 28412 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 17:48:46.090  INFO 28412 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 17:48:46.119  INFO 28412 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 17:48:46.124  INFO 28412 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 17:48:46.128 ERROR 28412 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 17:48:46.130  INFO 28412 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 17:49:06.347 ERROR   [main] o.s.boot.SpringApplication               826 : Application run failed
+
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:545)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:494)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:464)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$7(ConfigFileApplicationListener.java:443)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$8(ConfigFileApplicationListener.java:443)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:440)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$0(ConfigFileApplicationListener.java:335)
+	at org.springframework.boot.context.config.FilteredPropertySource.apply(FilteredPropertySource.java:54)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:323)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:214)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:198)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:188)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.flock.cmdb.CMDBApplication.main(CMDBApplication.java:17)
+Caused by: org.yaml.snakeyaml.scanner.ScannerException: mapping values are not allowed here
+ in 'reader', line 23, column 24:
+        location: classpath: banner.txt
+                           ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:125)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:548)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:562)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:518)
+	... 25 common frames omitted
+
+2019-12-23 17:49:22.718 ERROR   [main] o.s.boot.SpringApplication               826 : Application run failed
+
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:545)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:494)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:464)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$7(ConfigFileApplicationListener.java:443)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$8(ConfigFileApplicationListener.java:443)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:440)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$0(ConfigFileApplicationListener.java:335)
+	at org.springframework.boot.context.config.FilteredPropertySource.apply(FilteredPropertySource.java:54)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:323)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:214)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:198)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:188)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.flock.cmdb.CMDBApplication.main(CMDBApplication.java:17)
+Caused by: org.yaml.snakeyaml.scanner.ScannerException: mapping values are not allowed here
+ in 'reader', line 23, column 24:
+        location: classpath: banner.txt
+                           ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:125)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:548)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:562)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:518)
+	... 25 common frames omitted
+
+2019-12-23 17:51:08.710  INFO 27308 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 27308 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 17:51:08.716 DEBUG 27308 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 17:51:08.717  INFO 27308 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 17:51:10.275  INFO 27308 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 17:51:10.284  INFO 27308 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 17:51:10.285  INFO 27308 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 17:51:10.393  INFO 27308 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 17:51:10.394  INFO 27308 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1645 ms
+2019-12-23 17:51:10.810  INFO 27308 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 17:51:10.870  INFO 27308 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 17:51:10.883  INFO 27308 [main] c.f.c.config.log.SpringBootPlusConfig    31 : init LogAop success
+2019-12-23 17:51:10.971  INFO 27308 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 17:51:11.149  INFO 27308 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 17:51:11.164  INFO 27308 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 17:51:11.191  INFO 27308 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 17:51:11.219  INFO 27308 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 17:51:11.225  INFO 27308 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 17:51:11.229 ERROR 27308 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 17:51:11.231  INFO 27308 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:01:06.395 ERROR   [main] o.s.boot.SpringApplication               826 : Application run failed
+
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:545)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:494)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:464)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$7(ConfigFileApplicationListener.java:443)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$8(ConfigFileApplicationListener.java:443)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:440)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$0(ConfigFileApplicationListener.java:335)
+	at org.springframework.boot.context.config.FilteredPropertySource.apply(FilteredPropertySource.java:54)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:323)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:214)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:198)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:188)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.flock.cmdb.CMDBApplication.main(CMDBApplication.java:19)
+Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning an alias
+ in 'reader', line 30, column 12:
+        email: ***@163.com
+               ^
+expected alphabetic or numeric character, but found *(42)
+ in 'reader', line 30, column 13:
+        email: ***@163.com
+                ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanAnchor(ScannerImpl.java:1444)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchAlias(ScannerImpl.java:916)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:364)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:586)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:124)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:125)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:548)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:562)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:518)
+	... 25 common frames omitted
+
+2019-12-23 18:01:47.582  INFO 25924 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 25924 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 18:01:47.588 DEBUG 25924 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 18:01:47.589  INFO 25924 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 18:01:49.162  INFO 25924 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 18:01:49.171  INFO 25924 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 18:01:49.171  INFO 25924 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 18:01:49.285  INFO 25924 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 18:01:49.286  INFO 25924 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1659 ms
+2019-12-23 18:01:49.731  INFO 25924 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 18:01:49.794  INFO 25924 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 18:01:49.807  INFO 25924 [main] c.f.c.config.log.SpringBootPlusConfig    31 : init LogAop success
+2019-12-23 18:01:49.897  INFO 25924 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:01:50.065  INFO 25924 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 18:01:50.079  INFO 25924 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 18:01:50.103  INFO 25924 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 18:01:50.131  INFO 25924 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 18:01:50.136  INFO 25924 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 18:01:50.140 ERROR 25924 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 18:01:50.142  INFO 25924 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:09:14.396  INFO 27760 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 27760 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 18:09:14.403 DEBUG 27760 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 18:09:14.406  INFO 27760 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 18:09:16.050  INFO 27760 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 18:09:16.058  INFO 27760 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 18:09:16.059  INFO 27760 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 18:09:16.157  INFO 27760 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 18:09:16.158  INFO 27760 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1712 ms
+2019-12-23 18:09:16.596  INFO 27760 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 18:09:16.657  INFO 27760 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 18:09:16.670  INFO 27760 [main] c.f.c.config.log.SpringBootPlusConfig    31 : init LogAop success
+2019-12-23 18:09:16.756  INFO 27760 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:09:16.941  INFO 27760 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 18:09:16.955  INFO 27760 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 18:09:16.979  INFO 27760 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 18:09:17.007  INFO 27760 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 18:09:17.013  INFO 27760 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 18:09:17.017 ERROR 27760 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 18:09:17.020  INFO 27760 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:16:14.346  INFO 24696 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 24696 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 18:16:14.352 DEBUG 24696 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 18:16:14.352  INFO 24696 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 18:16:15.943  INFO 24696 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 18:16:15.952  INFO 24696 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 18:16:15.952  INFO 24696 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 18:16:16.062  INFO 24696 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 18:16:16.063  INFO 24696 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1676 ms
+2019-12-23 18:16:16.490  INFO 24696 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 18:16:16.539  INFO 24696 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-23 18:16:16.554  INFO 24696 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 18:16:16.648  INFO 24696 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:16:16.844  INFO 24696 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 18:16:16.858  INFO 24696 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 18:16:16.884  INFO 24696 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 18:16:16.912  INFO 24696 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 18:16:16.917  INFO 24696 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 18:16:16.921 ERROR 24696 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 18:16:16.923  INFO 24696 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:17:23.943  INFO 28072 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28072 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 18:17:23.949 DEBUG 28072 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 18:17:23.950  INFO 28072 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 18:17:25.595  INFO 28072 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 18:17:25.605  INFO 28072 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 18:17:25.605  INFO 28072 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 18:17:25.706  INFO 28072 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 18:17:25.706  INFO 28072 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1720 ms
+2019-12-23 18:17:26.069  INFO 28072 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 18:17:26.125  INFO 28072 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 18:17:26.186  INFO 28072 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:17:26.271  INFO 28072 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 18:17:26.286  INFO 28072 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 18:17:26.315  INFO 28072 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 18:17:26.490  INFO 28072 [main] .d.s.w.r.o.CachingOperationNameGenerator 40 : Generating unique operation named: handleUsingGET_1
+2019-12-23 18:17:26.492  INFO 28072 [main] .d.s.w.r.o.CachingOperationNameGenerator 40 : Generating unique operation named: handleUsingGET_2
+2019-12-23 18:17:26.523  INFO 28072 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 18:17:26.529  INFO 28072 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 18:17:26.533 ERROR 28072 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 18:17:26.535  INFO 28072 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:18:08.234  INFO 28068 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28068 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-23 18:18:08.240 DEBUG 28068 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-23 18:18:08.242  INFO 28068 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-23 18:18:09.927  INFO 28068 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-23 18:18:09.936  INFO 28068 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-23 18:18:09.936  INFO 28068 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-23 18:18:10.044  INFO 28068 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-23 18:18:10.044  INFO 28068 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1769 ms
+2019-12-23 18:18:10.467  INFO 28068 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-23 18:18:10.517  INFO 28068 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-23 18:18:10.532  INFO 28068 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-23 18:18:10.627  INFO 28068 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-23 18:18:10.795  INFO 28068 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-23 18:18:10.809  INFO 28068 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-23 18:18:10.833  INFO 28068 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-23 18:18:10.861  INFO 28068 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-23 18:18:10.866  INFO 28068 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-23 18:18:10.870 ERROR 28068 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-23 18:18:10.872  INFO 28068 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:07:19.237  INFO 28704 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28704 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:07:19.250 DEBUG 28704 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:07:19.251  INFO 28704 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:07:21.604  INFO 28704 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8088 (http)
+2019-12-25 10:07:21.624  INFO 28704 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:07:21.625  INFO 28704 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:07:21.750  INFO 28704 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:07:21.751  INFO 28704 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 2447 ms
+2019-12-25 10:07:22.331  INFO 28704 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:07:22.390  INFO 28704 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-25 10:07:22.405  INFO 28704 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:07:22.579  INFO 28704 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:07:22.704  INFO 28704 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:07:22.724  INFO 28704 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:07:22.755  INFO 28704 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:07:22.792  INFO 28704 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-25 10:07:22.798  INFO 28704 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-25 10:07:22.803 ERROR 28704 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2019-12-25 10:07:22.806  INFO 28704 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:08:16.436  INFO 6488 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 6488 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:08:16.455 DEBUG 6488 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:08:16.456  INFO 6488 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:08:18.387  INFO 6488 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:08:18.398  INFO 6488 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:08:18.398  INFO 6488 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:08:18.524  INFO 6488 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:08:18.524  INFO 6488 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1901 ms
+2019-12-25 10:08:19.018  INFO 6488 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:08:19.072  INFO 6488 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-25 10:08:19.090  INFO 6488 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:08:19.200  INFO 6488 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:08:19.386  INFO 6488 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:08:19.402  INFO 6488 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:08:19.431  INFO 6488 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:08:19.476  INFO 6488 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:08:19.479  INFO 6488 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.451 seconds (JVM running for 4.022)
+2019-12-25 10:08:19.505  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     56 : projectFinalName : null
+2019-12-25 10:08:19.506  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     57 : projectVersion : null
+2019-12-25 10:08:19.506  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     58 : profileActive : null
+2019-12-25 10:08:19.506  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     59 : contextPath : /cmdb
+2019-12-25 10:08:19.506  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     60 : port : 8888
+2019-12-25 10:08:19.507  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     71 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:08:19.507  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     72 : docs:http://192.168.12.47:8888/cmdbdocs
+2019-12-25 10:08:19.508  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     73 : cmdb project start success...........
+2019-12-25 10:08:19.531  INFO 6488 [main] c.f.common.boot.PrintApplicationInfo     74 : 
+        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  
+2019-12-25 10:09:18.016  INFO 28080 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28080 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:09:18.023 DEBUG 28080 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:09:18.024  INFO 28080 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:09:19.578  INFO 28080 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:09:19.588  INFO 28080 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:09:19.589  INFO 28080 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:09:19.708  INFO 28080 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:09:19.708  INFO 28080 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1641 ms
+2019-12-25 10:09:20.199  INFO 28080 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:09:20.250  INFO 28080 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-25 10:09:20.266  INFO 28080 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:09:20.436  INFO 28080 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:09:20.555  INFO 28080 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:09:20.571  INFO 28080 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:09:20.600  INFO 28080 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:09:20.643  INFO 28080 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:09:20.647  INFO 28080 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.511 seconds (JVM running for 4.369)
+2019-12-25 10:09:20.675  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     56 : projectFinalName : null
+2019-12-25 10:09:20.675  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     57 : projectVersion : null
+2019-12-25 10:09:20.675  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     58 : profileActive : null
+2019-12-25 10:09:20.675  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     59 : contextPath : /cmdb
+2019-12-25 10:09:20.676  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     60 : port : 8888
+2019-12-25 10:09:20.677  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     71 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:09:20.677  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     72 : docs:http://192.168.12.47:8888/cmdbdocs
+2019-12-25 10:09:20.677  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     73 : cmdb project start success...........
+2019-12-25 10:09:20.680  INFO 28080 [main] c.f.common.boot.PrintApplicationInfo     74 : 
+        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  
+2019-12-25 10:10:47.499  INFO 28536 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28536 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:10:47.512 DEBUG 28536 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:10:47.512  INFO 28536 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:10:49.382  INFO 28536 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:10:49.392  INFO 28536 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:10:49.393  INFO 28536 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:10:49.514  INFO 28536 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:10:49.515  INFO 28536 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1947 ms
+2019-12-25 10:10:50.010  INFO 28536 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:10:50.062  INFO 28536 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-25 10:10:50.078  INFO 28536 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:10:50.185  INFO 28536 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:10:50.371  INFO 28536 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:10:50.387  INFO 28536 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:10:50.415  INFO 28536 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:10:50.458  INFO 28536 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:10:50.461  INFO 28536 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.37 seconds (JVM running for 4.001)
+2019-12-25 10:10:56.925  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     56 : projectFinalName : null
+2019-12-25 10:10:56.926  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     57 : projectVersion : null
+2019-12-25 10:10:56.926  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     58 : profileActive : null
+2019-12-25 10:10:56.926  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     59 : contextPath : /cmdb
+2019-12-25 10:10:56.926  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     60 : port : 8888
+2019-12-25 10:10:56.929  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     71 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:10:56.929  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     72 : docs:http://192.168.12.47:8888/cmdbdocs
+2019-12-25 10:10:56.929  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     73 : cmdb project start success...........
+2019-12-25 10:10:56.933  INFO 28536 [main] c.f.common.boot.PrintApplicationInfo     74 : 
+        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  
+2019-12-25 10:11:23.236  INFO 9912 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 9912 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:11:23.244 DEBUG 9912 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:11:23.245  INFO 9912 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:11:25.033  INFO 9912 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:11:25.043  INFO 9912 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:11:25.043  INFO 9912 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:11:25.150  INFO 9912 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:11:25.151  INFO 9912 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1858 ms
+2019-12-25 10:11:25.665  INFO 9912 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:11:25.717  INFO 9912 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-25 10:11:25.733  INFO 9912 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:11:25.896  INFO 9912 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:11:26.013  INFO 9912 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:11:26.029  INFO 9912 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:11:26.057  INFO 9912 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:11:26.100  INFO 9912 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:11:26.103  INFO 9912 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.254 seconds (JVM running for 3.976)
+2019-12-25 10:11:35.486  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     56 : projectFinalName : null
+2019-12-25 10:11:35.487  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     57 : projectVersion : null
+2019-12-25 10:11:35.488  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     58 : profileActive : null
+2019-12-25 10:11:35.489  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     59 : contextPath : /cmdb
+2019-12-25 10:11:35.489  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     60 : port : 8888
+2019-12-25 10:11:35.491  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     71 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:11:35.491  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     72 : docs:http://192.168.12.47:8888/cmdbdocs
+2019-12-25 10:11:35.491  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     73 : cmdb project start success...........
+2019-12-25 10:11:35.495  INFO 9912 [main] c.f.common.boot.PrintApplicationInfo     74 : 
+        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  
+2019-12-25 10:11:48.052  INFO 20260 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 20260 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:11:48.061 DEBUG 20260 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:11:48.061  INFO 20260 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:11:49.898  INFO 20260 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:11:49.908  INFO 20260 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:11:49.909  INFO 20260 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:11:50.024  INFO 20260 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:11:50.025  INFO 20260 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1908 ms
+2019-12-25 10:11:50.565  INFO 20260 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:11:50.621  INFO 20260 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-25 10:11:50.638  INFO 20260 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:11:50.815  INFO 20260 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:11:50.931  INFO 20260 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:11:50.947  INFO 20260 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:11:50.977  INFO 20260 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:11:51.022  INFO 20260 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:11:51.025  INFO 20260 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.36 seconds (JVM running for 4.106)
+2019-12-25 10:11:53.762  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     56 : projectFinalName : null
+2019-12-25 10:11:57.059  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     57 : projectVersion : null
+2019-12-25 10:12:03.379  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     58 : profileActive : null
+2019-12-25 10:12:04.248  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     59 : contextPath : /cmdb
+2019-12-25 10:12:06.610  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     60 : port : 8888
+2019-12-25 10:12:16.958  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     71 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:12:16.958  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     72 : docs:http://192.168.12.47:8888/cmdbdocs
+2019-12-25 10:12:16.959  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     73 : cmdb project start success...........
+2019-12-25 10:12:16.963  INFO 20260 [main] c.f.common.boot.PrintApplicationInfo     74 : 
+        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  
+2019-12-25 10:22:37.447  INFO 26832 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 26832 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:22:37.466 DEBUG 26832 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:22:37.466  INFO 26832 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:22:39.252  INFO 26832 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:22:39.262  INFO 26832 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:22:39.262  INFO 26832 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:22:39.263  INFO 26832 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:22:39.373  INFO 26832 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:22:39.374  INFO 26832 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1860 ms
+2019-12-25 10:22:39.872  INFO 26832 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:22:39.925  INFO 26832 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-25 10:22:39.941  INFO 26832 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:22:40.050  INFO 26832 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:22:40.247  INFO 26832 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:22:40.263  INFO 26832 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:22:40.293  INFO 26832 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:22:40.312  INFO 26832 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:22:40.335  INFO 26832 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:22:40.338  INFO 26832 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.266 seconds (JVM running for 3.762)
+2019-12-25 10:22:40.363  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     56 : projectFinalName : null
+2019-12-25 10:22:40.363  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     57 : projectVersion : null
+2019-12-25 10:22:40.364  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     58 : profileActive : null
+2019-12-25 10:22:40.364  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     59 : contextPath : /cmdb
+2019-12-25 10:22:40.364  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     60 : port : 8888
+2019-12-25 10:22:40.365  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     71 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:22:40.365  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     72 : docs:http://192.168.12.47:8888/cmdbdocs
+2019-12-25 10:22:40.365  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     73 : cmdb project start success...........
+2019-12-25 10:22:40.368  INFO 26832 [main] c.f.common.boot.PrintApplicationInfo     74 : 
+        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  
+2019-12-25 10:25:46.705  INFO 29580 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 29580 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:25:46.708 DEBUG 29580 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:25:46.709  INFO 29580 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:25:48.553  INFO 29580 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:25:48.563  INFO 29580 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:25:48.563  INFO 29580 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:25:48.564  INFO 29580 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:25:48.695  INFO 29580 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:25:48.696  INFO 29580 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1941 ms
+2019-12-25 10:25:49.226  INFO 29580 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:25:49.279  INFO 29580 [main] c.f.common.config.SpringBootPlusConfig   31 : init LogAop success
+2019-12-25 10:25:49.295  INFO 29580 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:25:49.402  INFO 29580 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:25:49.601  INFO 29580 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:25:49.617  INFO 29580 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:25:49.646  INFO 29580 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:25:49.665  INFO 29580 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:25:49.689  INFO 29580 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:25:49.692  INFO 29580 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.419 seconds (JVM running for 3.957)
+2019-12-25 10:25:49.719  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     56 : projectFinalName : null
+2019-12-25 10:25:49.719  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     57 : projectVersion : null
+2019-12-25 10:25:49.719  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     58 : profileActive : null
+2019-12-25 10:25:49.719  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     59 : contextPath : /cmdb
+2019-12-25 10:25:49.719  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     60 : port : 8888
+2019-12-25 10:25:49.720  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     71 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:25:49.720  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     72 : docs:http://192.168.12.47:8888/cmdbdocs
+2019-12-25 10:25:49.720  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     73 : cmdb project start success...........
+2019-12-25 10:25:49.723  INFO 29580 [main] c.f.common.boot.PrintApplicationInfo     74 : 
+        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  
+2019-12-25 10:25:54.551  INFO 29580 [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 10:25:54.552  INFO 29580 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2019-12-25 10:25:54.561  INFO 29580 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 9 ms
+2019-12-25 10:33:51.778  INFO 29112 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 29112 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:33:51.781 DEBUG 29112 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:33:51.782  INFO 29112 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:33:53.583  INFO 29112 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:33:53.592  INFO 29112 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:33:53.593  INFO 29112 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:33:53.593  INFO 29112 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:33:53.702  INFO 29112 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:33:53.703  INFO 29112 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1879 ms
+2019-12-25 10:33:54.203  INFO 29112 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:33:54.259  INFO 29112 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-25 10:33:54.279  INFO 29112 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:33:54.469  INFO 29112 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:33:54.583  INFO 29112 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:33:54.599  INFO 29112 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:33:54.627  INFO 29112 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:33:54.646  INFO 29112 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:33:54.670  INFO 29112 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:33:54.673  INFO 29112 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.257 seconds (JVM running for 3.779)
+2019-12-25 10:33:54.702  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     55 : projectFinalName : null
+2019-12-25 10:33:54.702  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     56 : projectVersion : null
+2019-12-25 10:33:54.702  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     57 : profileActive : null
+2019-12-25 10:33:54.702  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     58 : contextPath : /cmdb
+2019-12-25 10:33:54.703  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     59 : port : 8888
+2019-12-25 10:33:54.703  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     70 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:33:54.704  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     71 : docs:http://192.168.12.47:8888/cmdb/docs
+2019-12-25 10:33:54.704  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     72 : cmdb project start success...........
+2019-12-25 10:33:54.708  INFO 29112 [main] c.f.common.boot.PrintApplicationInfo     73 : 
+[2J[34m        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  [m
+2019-12-25 10:33:58.228  INFO 29112 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 10:33:58.228  INFO 29112 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2019-12-25 10:33:58.242  INFO 29112 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 14 ms
+2019-12-25 10:33:58.341  INFO 29112 [http-nio-8888-exec-1] com.flock.common.aop.LogAop              129 : [2J[32mrequestInfo:
+{
+	"path":"/cmdb/docs",
+	"ip":"192.168.12.47",
+	"requestMethod":"GET",
+	"isRequestBody":false,
+	"time":"2019-12-25 10:33:58"
+}[m
+2019-12-25 10:38:54.165  INFO 27240 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 27240 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:38:54.169 DEBUG 27240 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:38:54.169  INFO 27240 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:38:56.045  INFO 27240 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:38:56.055  INFO 27240 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:38:56.055  INFO 27240 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:38:56.056  INFO 27240 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:38:56.182  INFO 27240 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:38:56.182  INFO 27240 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1969 ms
+2019-12-25 10:38:56.703  INFO 27240 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:38:56.763  INFO 27240 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-25 10:38:56.782  INFO 27240 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:38:56.892  INFO 27240 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:38:57.085  INFO 27240 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:38:57.102  INFO 27240 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:38:57.131  INFO 27240 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:38:57.152  INFO 27240 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:38:57.179  INFO 27240 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:38:57.182  INFO 27240 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.4 seconds (JVM running for 3.929)
+2019-12-25 10:38:57.211  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     55 : projectFinalName : null
+2019-12-25 10:38:57.211  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     56 : projectVersion : null
+2019-12-25 10:38:57.212  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     57 : profileActive : null
+2019-12-25 10:38:57.212  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     58 : contextPath : /cmdb
+2019-12-25 10:38:57.212  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     59 : port : 8888
+2019-12-25 10:38:57.213  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     70 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:38:57.213  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     71 : docs:http://192.168.12.47:8888/cmdb/docs
+2019-12-25 10:38:57.213  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     72 : cmdb project start success...........
+2019-12-25 10:38:57.218  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     73 : 
+[2J[34m        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  [m
+2019-12-25 10:39:02.319  INFO 27240 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 10:39:02.319  INFO 27240 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2019-12-25 10:39:02.326  INFO 27240 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 7 ms
+2019-12-25 10:43:22.633  INFO 15704 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 15704 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:43:22.637 DEBUG 15704 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:43:22.637  INFO 15704 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:43:24.653  INFO 15704 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:43:24.662  INFO 15704 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:43:24.663  INFO 15704 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:43:24.663  INFO 15704 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:43:24.775  INFO 15704 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:43:24.775  INFO 15704 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 2090 ms
+2019-12-25 10:43:25.292  INFO 15704 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:43:25.345  INFO 15704 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-25 10:43:25.362  INFO 15704 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:43:25.540  INFO 15704 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:43:25.654  INFO 15704 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:43:25.669  INFO 15704 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:43:25.699  INFO 15704 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:43:25.718  INFO 15704 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:43:25.743  INFO 15704 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:43:25.747  INFO 15704 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.464 seconds (JVM running for 4.01)
+2019-12-25 10:43:25.774  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     55 : projectFinalName : null
+2019-12-25 10:43:25.775  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     56 : projectVersion : null
+2019-12-25 10:43:25.775  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     57 : profileActive : null
+2019-12-25 10:43:25.775  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     58 : contextPath : /cmdb
+2019-12-25 10:43:25.775  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     59 : port : 8888
+2019-12-25 10:43:25.776  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     70 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:43:25.776  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     71 : docs:http://192.168.12.47:8888/cmdb/docs
+2019-12-25 10:43:25.776  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     72 : cmdb project start success...........
+2019-12-25 10:43:25.781  INFO 15704 [main] c.f.common.boot.PrintApplicationInfo     73 : 
+[2J[34m        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  [m
+2019-12-25 10:43:30.509  INFO 15704 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 10:43:30.509  INFO 15704 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2019-12-25 10:43:30.516  INFO 15704 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 7 ms
+2019-12-25 10:44:20.342  INFO 22432 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 22432 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:44:20.345 DEBUG 22432 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:44:20.345  INFO 22432 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:44:22.106  INFO 22432 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:44:22.115  INFO 22432 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:44:22.116  INFO 22432 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:44:22.116  INFO 22432 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:44:22.238  INFO 22432 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:44:22.239  INFO 22432 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1856 ms
+2019-12-25 10:44:22.750  INFO 22432 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:44:22.804  INFO 22432 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-25 10:44:22.821  INFO 22432 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:44:22.991  INFO 22432 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:44:23.109  INFO 22432 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:44:23.125  INFO 22432 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:44:23.153  INFO 22432 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:44:23.172  INFO 22432 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:44:23.197  INFO 22432 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:44:23.201  INFO 22432 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.217 seconds (JVM running for 3.759)
+2019-12-25 10:44:23.227  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     55 : projectFinalName : null
+2019-12-25 10:44:23.228  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     56 : projectVersion : null
+2019-12-25 10:44:23.228  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     57 : profileActive : null
+2019-12-25 10:44:23.228  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     58 : contextPath : /cmdb
+2019-12-25 10:44:23.228  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     59 : port : 8888
+2019-12-25 10:44:23.229  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     70 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:44:23.229  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     71 : docs:http://192.168.12.47:8888/cmdb/docs
+2019-12-25 10:44:23.229  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     72 : cmdb project start success...........
+2019-12-25 10:44:23.233  INFO 22432 [main] c.f.common.boot.PrintApplicationInfo     73 : 
+[2J[34m        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  [m
+2019-12-25 10:44:27.042  INFO 22432 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 10:44:27.043  INFO 22432 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2019-12-25 10:44:27.050  INFO 22432 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 7 ms
+2019-12-25 10:48:37.569  INFO 28396 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28396 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:48:37.572 DEBUG 28396 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:48:37.572  INFO 28396 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:48:39.353  INFO 28396 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:48:39.362  INFO 28396 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:48:39.363  INFO 28396 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:48:39.363  INFO 28396 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:48:39.476  INFO 28396 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:48:39.477  INFO 28396 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1861 ms
+2019-12-25 10:48:39.997  INFO 28396 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:48:40.049  INFO 28396 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-25 10:48:40.065  INFO 28396 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:48:40.227  INFO 28396 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:48:40.341  INFO 28396 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:48:40.357  INFO 28396 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:48:40.385  INFO 28396 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:48:40.405  INFO 28396 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:48:40.429  INFO 28396 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:48:40.432  INFO 28396 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.224 seconds (JVM running for 3.749)
+2019-12-25 10:48:40.459  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     55 : projectFinalName : null
+2019-12-25 10:48:40.460  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     56 : projectVersion : null
+2019-12-25 10:48:40.460  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     57 : profileActive : null
+2019-12-25 10:48:40.460  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     58 : contextPath : /cmdb
+2019-12-25 10:48:40.460  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     59 : port : 8888
+2019-12-25 10:48:40.461  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     70 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:48:40.461  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     71 : docs:http://192.168.12.47:8888/cmdb/docs
+2019-12-25 10:48:40.461  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     72 : cmdb project start success...........
+2019-12-25 10:48:40.466  INFO 28396 [main] c.f.common.boot.PrintApplicationInfo     73 : 
+[2J[34m        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  [m
+2019-12-25 10:48:44.211  INFO 28396 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 10:48:44.211  INFO 28396 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2019-12-25 10:48:44.217  INFO 28396 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 6 ms
+2019-12-25 10:50:57.942  INFO 28704 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 28704 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:50:57.954 DEBUG 28704 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:50:57.955  INFO 28704 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:50:59.830  INFO 28704 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:50:59.839  INFO 28704 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:50:59.840  INFO 28704 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:50:59.840  INFO 28704 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:50:59.967  INFO 28704 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:50:59.967  INFO 28704 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1950 ms
+2019-12-25 10:51:00.468  INFO 28704 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:51:00.522  INFO 28704 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-25 10:51:00.539  INFO 28704 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:51:11.123  INFO 28704 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:51:11.313  INFO 28704 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:51:11.330  INFO 28704 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:51:11.359  INFO 28704 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:51:11.380  INFO 28704 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:51:11.406  INFO 28704 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:51:11.409  INFO 28704 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 13.9 seconds (JVM running for 14.81)
+2019-12-25 10:51:11.436  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     55 : projectFinalName : null
+2019-12-25 10:51:11.436  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     56 : projectVersion : null
+2019-12-25 10:51:11.436  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     57 : profileActive : null
+2019-12-25 10:51:11.436  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     58 : contextPath : /cmdb
+2019-12-25 10:51:11.436  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     59 : port : 8888
+2019-12-25 10:51:11.437  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     70 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:51:11.438  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     71 : docs:http://192.168.12.47:8888/cmdb/docs
+2019-12-25 10:51:11.438  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     72 : cmdb project start success...........
+2019-12-25 10:51:11.442  INFO 28704 [main] c.f.common.boot.PrintApplicationInfo     73 : 
+[2J[34m        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  [m
+2019-12-25 10:54:14.188  INFO 27240 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 27240 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:54:14.191 DEBUG 27240 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:54:14.192  INFO 27240 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:54:16.055  INFO 27240 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:54:16.064  INFO 27240 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:54:16.065  INFO 27240 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:54:16.065  INFO 27240 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:54:16.197  INFO 27240 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:54:16.197  INFO 27240 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1961 ms
+2019-12-25 10:54:16.733  INFO 27240 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:54:16.812  INFO 27240 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-25 10:54:16.839  INFO 27240 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:54:16.950  INFO 27240 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:54:17.135  INFO 27240 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:54:17.151  INFO 27240 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:54:17.180  INFO 27240 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:54:17.295  INFO 27240 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:54:17.320  INFO 27240 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:54:17.323  INFO 27240 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.528 seconds (JVM running for 4.183)
+2019-12-25 10:54:17.350  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     55 : projectFinalName : null
+2019-12-25 10:54:17.350  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     56 : projectVersion : null
+2019-12-25 10:54:17.350  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     57 : profileActive : null
+2019-12-25 10:54:17.350  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     58 : contextPath : /cmdb
+2019-12-25 10:54:17.350  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     59 : port : 8888
+2019-12-25 10:54:17.351  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     70 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:54:17.351  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     71 : docs:http://192.168.12.47:8888/cmdb/docs
+2019-12-25 10:54:17.351  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     72 : cmdb project start success...........
+2019-12-25 10:54:17.356  INFO 27240 [main] c.f.common.boot.PrintApplicationInfo     73 : 
+[2J[34m        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  [m
+2019-12-25 10:54:25.737  INFO 27240 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 10:54:25.738  INFO 27240 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2019-12-25 10:54:25.744  INFO 27240 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 6 ms
+2019-12-25 10:54:50.485  INFO 16456 [main] com.flock.cmdb.CMDBApplication           55 : Starting CMDBApplication on win7-PC with PID 16456 (D:\IdeaProjects\wacher\flock\services\cmdb\target\classes started by win7 in D:\IdeaProjects\wacher\flock)
+2019-12-25 10:54:50.488 DEBUG 16456 [main] com.flock.cmdb.CMDBApplication           56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-25 10:54:50.488  INFO 16456 [main] com.flock.cmdb.CMDBApplication           651 : No active profile set, falling back to default profiles: default
+2019-12-25 10:54:52.283  INFO 16456 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 8888 (http)
+2019-12-25 10:54:52.293  INFO 16456 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:54:52.293  INFO 16456 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-25 10:54:52.293  INFO 16456 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-25 10:54:52.420  INFO 16456 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-25 10:54:52.421  INFO 16456 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 1888 ms
+2019-12-25 10:54:52.905  INFO 16456 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 10:54:52.957  INFO 16456 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-25 10:54:52.973  INFO 16456 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-25 10:54:53.150  INFO 16456 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 10:54:53.267  INFO 16456 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-25 10:54:53.283  INFO 16456 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-25 10:54:53.311  INFO 16456 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-25 10:54:53.425  INFO 16456 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-25 10:54:53.449  INFO 16456 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 8888 (http) with context path '/cmdb'
+2019-12-25 10:54:53.452  INFO 16456 [main] com.flock.cmdb.CMDBApplication           61 : Started CMDBApplication in 3.32 seconds (JVM running for 3.883)
+2019-12-25 10:54:53.477  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     55 : projectFinalName : null
+2019-12-25 10:54:53.478  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     56 : projectVersion : null
+2019-12-25 10:54:53.478  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     57 : profileActive : null
+2019-12-25 10:54:53.478  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     58 : contextPath : /cmdb
+2019-12-25 10:54:53.478  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     59 : port : 8888
+2019-12-25 10:54:53.479  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     70 : home:http://192.168.12.47:8888/cmdb
+2019-12-25 10:54:53.479  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     71 : docs:http://192.168.12.47:8888/cmdb/docs
+2019-12-25 10:54:53.479  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     72 : cmdb project start success...........
+2019-12-25 10:54:53.483  INFO 16456 [main] c.f.common.boot.PrintApplicationInfo     73 : 
+[2J[34m        _                    _                                                    
+  ___  | |_    __ _   _ __  | |_     ___   _   _    ___    ___    ___   ___   ___ 
+ / __| | __|  / _` | | '__| | __|   / __| | | | |  / __|  / __|  / _ \ / __| / __|
+ \__ \ | |_  | (_| | | |    | |_    \__ \ | |_| | | (__  | (__  |  __/ \__ \ \__ \
+ |___/  \__|  \__,_| |_|     \__|   |___/  \__,_|  \___|  \___|  \___| |___/ |___/
+                                                                                  [m
+2019-12-25 10:54:57.730  INFO 16456 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 10:54:57.730  INFO 16456 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2019-12-25 10:54:57.736  INFO 16456 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 6 ms
+2019-12-25 10:55:04.301  INFO 16456 [http-nio-8888-exec-19] com.flock.common.aop.LogAop              129 : [2J[32mrequestInfo:
+{
+	"path":"/cmdb/hello",
+	"ip":"192.168.12.47",
+	"requestMethod":"GET",
+	"isRequestBody":false,
+	"time":"2019-12-25 10:55:04"
+}[m
+2019-12-25 10:55:04.332  INFO 16456 [http-nio-8888-exec-19] com.flock.common.aop.LogAop              148 : [2J[34mresponseResult:
+{
+	"code":200,
+	"data":"Hello, everyone.",
+	"msg":"操作成功",
+	"time":"2019-12-25 10:55:04"
+}[m

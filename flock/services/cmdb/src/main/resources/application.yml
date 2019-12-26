@@ -1,0 +1,50 @@
+server:
+  port: ${server.port}
+  servlet:
+    context-path: /cmdb
+  tomcat:
+      max-threads: 1000
+      min-spare-threads: 30
+      uri-encoding: UTF-8
+
+spring:
+  application:
+    name: cmdb
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  jackson:
+    date-format: yyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  banner:
+    charset: UTF-8
+    location: classpath:banner.txt
+
+# swagger配置
+swagger:
+  base:
+    package: com.flock.cmdb
+  contact:
+    email: flock@163.com
+    name: wacher
+    url: ''
+  description: ''
+  title: cmdb
+  url: ''
+  version: 1.0
+
+mq:
+  host: 127.0.0.1
+  port: 5672
+  username: guest
+  password: guest
+
+flock:
+  # 是否启用ansi控制台输出有颜色的字体，local环境建议开启，服务器环境设置为false
+  enable-ansi: ${flock.enable-ansi}
+  # 请求日志在控制台是否格式化输出，local环境建议开启，服务器环境设置为false
+  request-log-format: ${request-log-format}
+  # 响应日志在控制台是否格式化输出，local环境建议开启，服务器环境设置为false
+  response-log-format: ${response-log-format}

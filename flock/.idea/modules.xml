@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/cmdb/cmdb.iml" filepath="$PROJECT_DIR$/services/cmdb/cmdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/common/common.iml" filepath="$PROJECT_DIR$/base/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/disruptor/disruptor.iml" filepath="$PROJECT_DIR$/demo/disruptor/disruptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/event-lib/event-lib.iml" filepath="$PROJECT_DIR$/base/event-lib/event-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flock.iml" filepath="$PROJECT_DIR$/flock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/flock-eureka/flock-eureka.iml" filepath="$PROJECT_DIR$/framework/flock-eureka/flock-eureka.iml" />
+      <module fileurl="file://D:\IdeaProjects\wacher\flock\framework\framework.iml" filepath="D:\IdeaProjects\wacher\flock\framework\framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/demo/rabbitmq/rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
+    </modules>
+  </component>
+</project>

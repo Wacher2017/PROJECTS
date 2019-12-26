@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cmdb" />
+        <module name="common" />
+        <module name="disruptor" />
+        <module name="event-lib" />
+        <module name="flock-eureka" />
+        <module name="rabbitmq" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base" target="1.8" />
+      <module name="cmdb" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="disruptor" target="1.8" />
+      <module name="event-lib" target="1.8" />
+      <module name="flock" target="1.5" />
+      <module name="flock-eureka" target="1.8" />
+      <module name="framework" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="rabbitmq" target="1.8" />
+      <module name="services" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

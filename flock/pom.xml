@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.flock</groupId>
+    <artifactId>flock</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>flock</name>
+    <url>http://maven.apache.org</url>
+    <description>
+        Flock 项目
+    </description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>parent</module>
+    </modules>
+
+    <profiles>
+        <profile>
+            <id>release-flock-eureka</id>
+            <modules>
+                <module>framework</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>release-cmdb</id>
+            <modules>
+                <module>base</module>
+                <module>services</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>release-demo</id>
+            <modules>
+                <module>demo</module>
+            </modules>
+        </profile>
+    </profiles>
+
+    <!--<scm>
+        <connection>scm:git:git@git.dev.itsnow.com:bsm/ai-ops.git</connection>
+        <developerConnection>scm:git:git@git.dev.itsnow.com:bsm/ai-ops.git</developerConnection>
+        <tag>latest</tag>
+    </scm>
+    <build>
+        <plugins>
+
+        </plugins>
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Itsnow Release Repository</name>
+            <url>http://nexus.itsnow.com/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Itsnow Snapshot Repository</name>
+            <url>http://nexus.itsnow.com/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>-->
+</project>

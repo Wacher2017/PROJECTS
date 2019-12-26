@@ -1,0 +1,11 @@
+com\flock\event\entity\InternalEvent.class
+com\flock\event\config\EventConfig.class
+com\flock\event\rabbit\RabbitmqMessage.class
+com\flock\event\rabbit\RabbitmqManager.class
+com\flock\event\external\Producer.class
+com\flock\event\external\BaseConsumer.class
+com\flock\event\entity\EventContext.class
+com\flock\event\enums\EventType.class
+com\flock\event\internal\BaseListener.class
+com\flock\event\internal\Publisher.class
+com\flock\event\rabbit\RabbitmqConsumer.class
