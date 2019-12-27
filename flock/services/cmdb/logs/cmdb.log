@@ -1,0 +1,509 @@
+2019-12-27 08:59:00.322  INFO   [main] o.s.t.c.support.AbstractContextLoader    264 : Could not detect default resource locations for test class [com.flock.cmdb.BaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-27 08:59:00.661  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-27 08:59:00.675  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7ee8290b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1f59a598, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e178745, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@192c3f1e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@26b3fd41, org.springframework.test.context.event.EventPublishingTestExecutionListener@7494f96a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@561b6512, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2e377400, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1757cd72, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@445b295b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@49e5f737]
+2019-12-27 08:59:01.583  INFO 15624 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 15624 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 08:59:01.592 DEBUG 15624 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 08:59:01.593  INFO 15624 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 08:59:03.096 ERROR 15624 [main] o.s.boot.SpringApplication               826 : Application run failed
+
+java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.findConstructorBindingAnnotatedConstructor(ConfigurationPropertiesBindConstructorProvider.java:62)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.getBindConstructor(ConfigurationPropertiesBindConstructorProvider.java:48)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBean$BindMethod.forType(ConfigurationPropertiesBean.java:311)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.validate(ConfigurationPropertiesBeanDefinitionValidator.java:63)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.postProcessBeanFactory(ConfigurationPropertiesBeanDefinitionValidator.java:45)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:125)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.exc.InvalidDefinitionException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 44 common frames omitted
+
+2019-12-27 08:59:03.102 ERROR 15624 [main] o.s.test.context.TestContextManager      248 : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@192c3f1e] to prepare test instance [com.flock.cmdb.manager.ApplyHandlerManagerTest@5fac521d]
+
+java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.findConstructorBindingAnnotatedConstructor(ConfigurationPropertiesBindConstructorProvider.java:62)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.getBindConstructor(ConfigurationPropertiesBindConstructorProvider.java:48)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBean$BindMethod.forType(ConfigurationPropertiesBean.java:311)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.validate(ConfigurationPropertiesBeanDefinitionValidator.java:63)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.postProcessBeanFactory(ConfigurationPropertiesBeanDefinitionValidator.java:45)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:125)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.exc.InvalidDefinitionException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 44 common frames omitted
+
+2019-12-27 08:59:58.078  INFO   [main] o.s.t.c.support.AbstractContextLoader    264 : Could not detect default resource locations for test class [com.flock.cmdb.BaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-27 08:59:58.255  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-27 08:59:58.305  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38e79ae3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63070bab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68e5eea7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2ffcb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@762ef0ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31f9b85e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@424e1977, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10d68fcd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@117e949d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6db9f5a4]
+2019-12-27 08:59:58.936  INFO 21056 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 21056 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 08:59:58.937 DEBUG 21056 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 08:59:58.937  INFO 21056 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 09:00:00.567 ERROR 21056 [main] o.s.boot.SpringApplication               826 : Application run failed
+
+java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.findConstructorBindingAnnotatedConstructor(ConfigurationPropertiesBindConstructorProvider.java:62)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.getBindConstructor(ConfigurationPropertiesBindConstructorProvider.java:48)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBean$BindMethod.forType(ConfigurationPropertiesBean.java:311)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.validate(ConfigurationPropertiesBeanDefinitionValidator.java:63)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.postProcessBeanFactory(ConfigurationPropertiesBeanDefinitionValidator.java:45)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:125)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.exc.InvalidDefinitionException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 44 common frames omitted
+
+2019-12-27 09:00:00.575 ERROR 21056 [main] o.s.test.context.TestContextManager      248 : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5] to prepare test instance [com.flock.cmdb.manager.ApplyHandlerManagerTest@51b35e4e]
+
+java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.findConstructorBindingAnnotatedConstructor(ConfigurationPropertiesBindConstructorProvider.java:62)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.getBindConstructor(ConfigurationPropertiesBindConstructorProvider.java:48)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBean$BindMethod.forType(ConfigurationPropertiesBean.java:311)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.validate(ConfigurationPropertiesBeanDefinitionValidator.java:63)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.postProcessBeanFactory(ConfigurationPropertiesBeanDefinitionValidator.java:45)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:125)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.exc.InvalidDefinitionException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 44 common frames omitted
+
+2019-12-27 09:03:41.829  INFO   [main] o.s.t.c.support.AbstractContextLoader    264 : Could not detect default resource locations for test class [com.flock.cmdb.BaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-27 09:03:42.017  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-27 09:03:42.039  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38e79ae3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63070bab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68e5eea7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2ffcb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@762ef0ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31f9b85e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@424e1977, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10d68fcd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@117e949d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6db9f5a4]
+2019-12-27 09:03:42.956  INFO 18312 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 18312 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 09:03:42.963 DEBUG 18312 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 09:03:42.964  INFO 18312 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 09:03:45.222  INFO 18312 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 0 (http)
+2019-12-27 09:03:45.234  INFO 18312 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 09:03:45.235  INFO 18312 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-27 09:03:45.235  INFO 18312 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 09:03:45.401  INFO 18312 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-27 09:03:45.401  INFO 18312 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 2314 ms
+2019-12-27 09:03:46.419  INFO 18312 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-27 09:03:46.601  INFO 18312 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-27 09:03:46.683  INFO 18312 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 09:03:46.916  INFO 18312 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 09:03:47.218  INFO 18312 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-27 09:03:47.247  INFO 18312 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-27 09:03:47.280  INFO 18312 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-27 09:03:47.422  INFO 18312 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 09:03:47.455  INFO 18312 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 29741 (http) with context path '/cmdb'
+2019-12-27 09:03:47.459  INFO 18312 [main] c.f.c.manager.ApplyHandlerManagerTest    61 : Started ApplyHandlerManagerTest in 5.349 seconds (JVM running for 6.397)
+2019-12-27 09:03:47.574 ERROR 18312 [main] o.s.test.context.TestContextManager      248 : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5] to prepare test instance [com.flock.cmdb.manager.ApplyHandlerManagerTest@5c4cc644]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.flock.cmdb.manager.ApplyHandlerManagerTest': Unsatisfied dependency expressed through field 'applyHandlerManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.flock.cmdb.manager.ApplyHandlerManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:393)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.flock.cmdb.manager.ApplyHandlerManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 28 common frames omitted
+
+2019-12-27 09:03:47.602  INFO 18312 [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 09:11:24.108  INFO   [main] o.s.t.c.support.AbstractContextLoader    264 : Could not detect default resource locations for test class [com.flock.cmdb.BaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-27 09:11:24.301  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-27 09:11:24.330  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38e79ae3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63070bab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68e5eea7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2ffcb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@762ef0ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31f9b85e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@424e1977, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10d68fcd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@117e949d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6db9f5a4]
+2019-12-27 09:11:25.410  INFO 8548 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 8548 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 09:11:25.411 DEBUG 8548 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 09:11:25.411  INFO 8548 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 09:11:27.591  INFO 8548 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 0 (http)
+2019-12-27 09:11:27.602  INFO 8548 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 09:11:27.603  INFO 8548 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-27 09:11:27.603  INFO 8548 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 09:11:27.765  INFO 8548 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-27 09:11:27.765  INFO 8548 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 2322 ms
+2019-12-27 09:11:28.753  INFO 8548 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-27 09:11:28.931  INFO 8548 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-27 09:11:28.981  INFO 8548 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 09:11:29.190  INFO 8548 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 09:11:29.476  INFO 8548 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-27 09:11:29.503  INFO 8548 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-27 09:11:29.533  INFO 8548 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-27 09:11:29.668  INFO 8548 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 09:11:29.696  INFO 8548 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 30359 (http) with context path '/cmdb'
+2019-12-27 09:11:29.700  INFO 8548 [main] c.f.c.manager.ApplyHandlerManagerTest    61 : Started ApplyHandlerManagerTest in 5.285 seconds (JVM running for 6.307)
+2019-12-27 09:11:29.791  INFO 8548 [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 09:12:38.275  INFO   [main] o.s.t.c.support.AbstractContextLoader    264 : Could not detect default resource locations for test class [com.flock.cmdb.BaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-27 09:12:38.470  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-27 09:12:38.502  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38e79ae3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63070bab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68e5eea7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2ffcb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@762ef0ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31f9b85e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@424e1977, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10d68fcd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@117e949d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6db9f5a4]
+2019-12-27 09:12:39.684  INFO 23984 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 23984 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 09:12:39.684 DEBUG 23984 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 09:12:39.685  INFO 23984 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 09:12:41.761  INFO 23984 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 0 (http)
+2019-12-27 09:12:41.772  INFO 23984 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 09:12:41.773  INFO 23984 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-27 09:12:41.773  INFO 23984 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 09:12:41.925  INFO 23984 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-27 09:12:41.925  INFO 23984 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 2219 ms
+2019-12-27 09:12:42.916  INFO 23984 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-27 09:12:43.098  INFO 23984 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-27 09:12:43.151  INFO 23984 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 09:12:43.392  INFO 23984 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 09:12:43.697  INFO 23984 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-27 09:12:43.722  INFO 23984 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-27 09:12:43.753  INFO 23984 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-27 09:12:43.900  INFO 23984 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 09:12:43.927  INFO 23984 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 30436 (http) with context path '/cmdb'
+2019-12-27 09:12:43.930  INFO 23984 [main] c.f.c.manager.ApplyHandlerManagerTest    61 : Started ApplyHandlerManagerTest in 5.362 seconds (JVM running for 6.418)
+2019-12-27 09:12:44.018  INFO 23984 [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 09:39:49.363  INFO   [main] o.s.t.c.support.AbstractContextLoader    264 : Could not detect default resource locations for test class [com.flock.cmdb.BaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-27 09:39:49.550  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-27 09:39:49.573  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38e79ae3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63070bab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68e5eea7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2ffcb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@762ef0ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31f9b85e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@424e1977, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10d68fcd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@117e949d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6db9f5a4]
+2019-12-27 09:39:50.188  INFO 11132 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 11132 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 09:39:50.189 DEBUG 11132 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 09:39:50.189  INFO 11132 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 09:39:52.803  INFO 11132 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 0 (http)
+2019-12-27 09:39:52.815  INFO 11132 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 09:39:52.815  INFO 11132 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-27 09:39:52.816  INFO 11132 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 09:39:52.971  INFO 11132 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-27 09:39:52.972  INFO 11132 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 2617 ms
+2019-12-27 09:39:54.069  INFO 11132 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-27 09:39:54.236  INFO 11132 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-27 09:39:54.286  INFO 11132 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 09:39:54.502  INFO 11132 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 09:39:54.793  INFO 11132 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-27 09:39:54.820  INFO 11132 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-27 09:39:54.851  INFO 11132 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-27 09:39:55.006  INFO 11132 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 09:39:55.035  INFO 11132 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 32114 (http) with context path '/cmdb'
+2019-12-27 09:39:55.038  INFO 11132 [main] c.f.c.manager.ApplyHandlerManagerTest    61 : Started ApplyHandlerManagerTest in 5.398 seconds (JVM running for 6.475)
+2019-12-27 09:39:55.116  INFO 11132 [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:25:02.828  INFO   [main] o.s.t.c.support.AbstractContextLoader    264 : Could not detect default resource locations for test class [com.flock.cmdb.BaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-27 10:25:03.021  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-27 10:25:03.072  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38e79ae3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63070bab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68e5eea7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2ffcb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@762ef0ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31f9b85e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@424e1977, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10d68fcd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@117e949d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6db9f5a4]
+2019-12-27 10:25:04.022  INFO 8596 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 8596 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 10:25:04.023 DEBUG 8596 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 10:25:04.023  INFO 8596 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 10:25:06.020  INFO 8596 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 0 (http)
+2019-12-27 10:25:06.031  INFO 8596 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 10:25:06.031  INFO 8596 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-27 10:25:06.032  INFO 8596 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:25:06.189  INFO 8596 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-27 10:25:06.189  INFO 8596 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 2147 ms
+2019-12-27 10:25:06.743  WARN 8596 [main] ConfigServletWebServerApplicationContext 558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applyHandlerManager' defined in file [D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb\target\classes\com\flock\cmdb\manager\ApplyHandlerManager.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.flock.common.contexts.HandlerContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-12-27 10:25:06.747  INFO 8596 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-27 10:25:06.765  INFO 8596 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-27 10:25:06.934 ERROR 8596 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.flock.cmdb.manager.ApplyHandlerManager required a bean of type 'com.flock.common.contexts.HandlerContext' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'handlerContext' in 'HandlerContextConfig' not loaded because @ConditionalOnProperty (flock.handler.enable=true) found different value in property 'flock.handler.enable'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'com.flock.common.contexts.HandlerContext' in your configuration.
+
+2019-12-27 10:25:06.991  INFO 8596 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 8596 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 10:25:06.992 DEBUG 8596 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 10:25:06.992  INFO 8596 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 10:25:07.516  WARN 8596 [main] org.apache.tomcat.util.modeler.Registry  173 : The MBean registry cannot be disabled because it has already been initialised
+2019-12-27 10:25:07.535  INFO 8596 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 0 (http)
+2019-12-27 10:25:07.536  INFO 8596 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-auto-2"]
+2019-12-27 10:25:07.537  INFO 8596 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-27 10:25:07.537  INFO 8596 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:25:07.579  INFO 8596 [main] o.a.c.c.C.[.[localhost].[/cmdb]          173 : Initializing Spring embedded WebApplicationContext
+2019-12-27 10:25:07.579  INFO 8596 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 583 ms
+2019-12-27 10:25:07.893  WARN 8596 [main] ConfigServletWebServerApplicationContext 558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applyHandlerManager' defined in file [D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb\target\classes\com\flock\cmdb\manager\ApplyHandlerManager.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.flock.common.contexts.HandlerContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-12-27 10:25:07.894  INFO 8596 [main] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2019-12-27 10:25:07.901  INFO 8596 [main] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-27 10:25:07.990 ERROR 8596 [main] o.s.b.d.LoggingFailureAnalysisReporter   40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.flock.cmdb.manager.ApplyHandlerManager required a bean of type 'com.flock.common.contexts.HandlerContext' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'handlerContext' in 'HandlerContextConfig' not loaded because @ConditionalOnProperty (flock.handler.enable=true) found different value in property 'flock.handler.enable'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'com.flock.common.contexts.HandlerContext' in your configuration.
+
+2019-12-27 10:25:07.993 ERROR 8596 [main] o.s.test.context.TestContextManager      248 : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5] to prepare test instance [com.flock.cmdb.manager.ApplyHandlerManagerTest@6c07ad6b]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'applyHandlerManager' defined in file [D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb\target\classes\com\flock\cmdb\manager\ApplyHandlerManager.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.flock.common.contexts.HandlerContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:125)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.flock.common.contexts.HandlerContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 44 common frames omitted
+
+2019-12-27 10:25:34.102  INFO   [main] o.s.t.c.support.AbstractContextLoader    264 : Could not detect default resource locations for test class [com.flock.cmdb.BaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-27 10:25:34.287  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-27 10:25:34.309  INFO   [main] .b.t.c.SpringBootTestContextBootstrapper 177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38e79ae3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63070bab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68e5eea7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@291b4bf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2ffcb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@762ef0ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31f9b85e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@424e1977, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10d68fcd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@117e949d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6db9f5a4]
+2019-12-27 10:25:35.219  INFO 20944 [main] c.f.c.manager.ApplyHandlerManagerTest    55 : Starting ApplyHandlerManagerTest on win7-PC with PID 20944 (started by win7 in D:\IdeaProjects\wacher\PROJECTS\flock\services\cmdb)
+2019-12-27 10:25:35.219 DEBUG 20944 [main] c.f.c.manager.ApplyHandlerManagerTest    56 : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-27 10:25:35.219  INFO 20944 [main] c.f.c.manager.ApplyHandlerManagerTest    655 : The following profiles are active: config-dev
+2019-12-27 10:25:37.589  INFO 20944 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  92 : Tomcat initialized with port(s): 0 (http)
+2019-12-27 10:25:37.602  INFO 20944 [main] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 10:25:37.602  INFO 20944 [main] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2019-12-27 10:25:37.603  INFO 20944 [main] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:25:37.771  INFO 20944 [main] o.a.c.c.C.[Tomcat].[localhost].[/cmdb]   173 : Initializing Spring embedded WebApplicationContext
+2019-12-27 10:25:37.772  INFO 20944 [main] o.s.web.context.ContextLoader            284 : Root WebApplicationContext: initialization completed in 2468 ms
+2019-12-27 10:25:38.867  INFO 20944 [main] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-27 10:25:39.058  INFO 20944 [main] c.f.common.config.SpringBootPlusConfig   32 : init LogAop success
+2019-12-27 10:25:39.108  INFO 20944 [main] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 10:25:39.347  INFO 20944 [main] o.s.s.concurrent.ThreadPoolTaskExecutor  171 : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:25:39.654  INFO 20944 [main] d.s.w.p.DocumentationPluginsBootstrapper 151 : Context refreshed
+2019-12-27 10:25:39.679  INFO 20944 [main] d.s.w.p.DocumentationPluginsBootstrapper 154 : Found 1 custom documentation plugin(s)
+2019-12-27 10:25:39.709  INFO 20944 [main] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2019-12-27 10:25:39.856  INFO 20944 [main] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-auto-1"]
+2019-12-27 10:25:39.887  INFO 20944 [main] o.s.b.w.embedded.tomcat.TomcatWebServer  204 : Tomcat started on port(s): 35260 (http) with context path '/cmdb'
+2019-12-27 10:25:39.890  INFO 20944 [main] c.f.c.manager.ApplyHandlerManagerTest    61 : Started ApplyHandlerManagerTest in 5.502 seconds (JVM running for 6.523)
+2019-12-27 10:25:39.969  INFO 20944 [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  208 : Shutting down ExecutorService 'applicationTaskExecutor'

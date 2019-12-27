@@ -10,7 +10,9 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan({
         "com.flock.common.config",
         "com.flock.common.controller",
-        "com.flock.cmdb.controller"
+        "com.flock.cmdb.controller",
+        "com.flock.cmdb.handler",
+        "com.flock.cmdb.manager"
 })
 public class CMDBApplication {
 
