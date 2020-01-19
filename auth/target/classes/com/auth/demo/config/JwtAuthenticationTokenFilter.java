@@ -36,8 +36,6 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain chain) throws ServletException, IOException {
-        System.out.println(request.getRequestURI());
-        System.out.println(request.getRequestURL());
         String auth_token = request.getHeader(this.token_header);
         if (StringUtils.isNotEmpty(auth_token) && auth_token.startsWith(this.tokenHead)) {
             auth_token = auth_token.substring(this.tokenHead.length());

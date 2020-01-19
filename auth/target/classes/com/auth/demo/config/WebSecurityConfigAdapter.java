@@ -104,7 +104,7 @@ public class WebSecurityConfigAdapter extends WebSecurityConfigurerAdapter {
                         "/swagger-resources", //用来获取api-docs的URI
                         "/swagger-resources/configuration/security", //安全选项
                         "/swagger-resources/**",
-                        "/webjars/springfox-swagger-ui/**",
+                        "/webjars/**",
                         "/favicon.ico",
                         "/**/*.css",
                         "/**/*.js",
