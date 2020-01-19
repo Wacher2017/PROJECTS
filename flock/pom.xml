@@ -38,6 +38,12 @@
             </modules>
         </profile>
         <profile>
+            <id>release-influxdb</id>
+            <modules>
+                <module>services</module>
+            </modules>
+        </profile>
+        <profile>
             <id>release-demo</id>
             <modules>
                 <module>demo</module>

@@ -11,6 +11,7 @@
         <module name="disruptor" />
         <module name="event-lib" />
         <module name="flock-eureka" />
+        <module name="influxdb" />
         <module name="rabbitmq" />
         <module name="reflect" />
         <module name="regex" />
@@ -26,6 +27,7 @@
       <module name="flock" target="1.5" />
       <module name="flock-eureka" target="1.8" />
       <module name="framework" target="1.8" />
+      <module name="influxdb" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="rabbitmq" target="1.8" />
       <module name="reflect" target="1.8" />

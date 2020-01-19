@@ -24,6 +24,13 @@
             </modules>
         </profile>
 
+        <profile>
+            <id>release-influxdb</id>
+            <modules>
+                <module>influxdb</module>
+            </modules>
+        </profile>
+
         <!--<profile>
             <id>release-monitor</id>
             <modules>

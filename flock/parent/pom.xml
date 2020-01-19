@@ -30,6 +30,7 @@
         <jackson.version>2.10.1</jackson.version>
         <rabbitmq.version>4.1.0</rabbitmq.version>
         <disruptor.version>3.3.2</disruptor.version>
+        <influxdb.version>2.15</influxdb.version>
         <flock-common.version>1.0</flock-common.version>
         <flock-event.version>1.0</flock-event.version>
         <lombok.version>[1.0.0,9.99.99]</lombok.version>
@@ -149,6 +150,13 @@
                 <groupId>com.lmax</groupId>
                 <artifactId>disruptor</artifactId>
                 <version>${disruptor.version}</version>
+            </dependency>
+
+            <!-- influxdb -->
+            <dependency>
+                <groupId>org.influxdb</groupId>
+                <artifactId>influxdb-java</artifactId>
+                <version>${influxdb.version}</version>
             </dependency>
 
             <!-- flock base-->

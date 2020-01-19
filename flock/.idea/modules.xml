@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/flock.iml" filepath="$PROJECT_DIR$/flock.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/flock-eureka/flock-eureka.iml" filepath="$PROJECT_DIR$/framework/flock-eureka/flock-eureka.iml" />
       <module fileurl="file://D:\IdeaProjects\wacher\flock\framework\framework.iml" filepath="D:\IdeaProjects\wacher\flock\framework\framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/influxdb/influxdb.iml" filepath="$PROJECT_DIR$/services/influxdb/influxdb.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/demo/rabbitmq/rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/reflect/reflect.iml" filepath="$PROJECT_DIR$/demo/reflect/reflect.iml" />
