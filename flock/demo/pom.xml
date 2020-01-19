@@ -22,6 +22,8 @@
             <modules>
                 <module>disruptor</module>
                 <module>rabbitmq</module>
+                <module>reflect</module>
+                <module>regex</module>
             </modules>
         </profile>
     </profiles>

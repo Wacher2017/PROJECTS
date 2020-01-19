@@ -13,6 +13,8 @@
       <module fileurl="file://D:\IdeaProjects\wacher\flock\framework\framework.iml" filepath="D:\IdeaProjects\wacher\flock\framework\framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/demo/rabbitmq/rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/reflect/reflect.iml" filepath="$PROJECT_DIR$/demo/reflect/reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/regex/regex.iml" filepath="$PROJECT_DIR$/demo/regex/regex.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
     </modules>
   </component>
