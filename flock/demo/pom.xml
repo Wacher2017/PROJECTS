@@ -24,6 +24,7 @@
                 <module>rabbitmq</module>
                 <module>reflect</module>
                 <module>regex</module>
+                <module>algorithm</module>
             </modules>
         </profile>
     </profiles>

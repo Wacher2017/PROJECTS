@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/demo/algorithm/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/cmdb/cmdb.iml" filepath="$PROJECT_DIR$/services/cmdb/cmdb.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/common/common.iml" filepath="$PROJECT_DIR$/base/common/common.iml" />

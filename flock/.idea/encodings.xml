@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/base/common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base/event-lib" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo/algorithm" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo/disruptor" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo/rabbitmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo/reflect" charset="UTF-8" />
