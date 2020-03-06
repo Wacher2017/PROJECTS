@@ -103,6 +103,7 @@ public boolean Find(int target, int[][] matrix) {
 ```
 Input:
 "A B"
+
 Output:
 "A%20B"
 ```
@@ -294,9 +295,9 @@ private TreeNode reConstructBinaryTree(int[] pre, int preL, int preR, int inL) {
     return root;
 }
 ```
-### 6.二叉树的下一个结点
+### 6. 二叉树的下一个结点
 
->View Code: ch0005
+>View Code: ch0006
 
 **题目描述**
 
@@ -330,7 +331,7 @@ void traverse(TreeNode root) {
     traverse(root.right);
 }
 ```
-①如果一个节点的右子树不为空，那么该节点的下一个节点是右子树的最左节点；
+①如果一个节点的右子树不为空，那么该节点的下一个节点是右子树的最左节点；     
 ②否则，向上找第一个左链接指向的树包含该节点的祖先节点。
 
 ```java
@@ -349,5 +350,39 @@ public TreeLinkNode GetNext(TreeLinkNode pNode) {
         }
     }
     return null;
+}
+```
+### 7. 用两个栈实现队列
+
+>View Code: ch0007
+
+**题目描述**
+
+用两个栈来实现一个队列，完成队列的 Push 和 Pop 操作。
+
+**解题思路**
+
+in 栈用来处理入栈（push）操作，out 栈用来处理出栈（pop）操作。
+一个元素进入 in 栈之后，出栈的顺序被反转。
+当元素要出栈时，需要先进入 out 栈，此时元素出栈顺序再一次被反转，
+因此出栈顺序就和最开始入栈顺序是相同的，先进入的元素先退出，这就是队列的顺序。
+
+```java
+Stack<Integer> in = new Stack<Integer>();
+Stack<Integer> out = new Stack<Integer>();
+
+public void push(int node) {
+    in.push(node);
+}
+
+public int pop() throws Exception {
+    if (out.isEmpty())
+        while (!in.isEmpty())
+            out.push(in.pop());
+
+    if (out.isEmpty())
+        throw new Exception("queue is empty");
+
+    return out.pop();
 }
 ```

@@ -10,7 +10,7 @@ public class ch0006Test {
 
     public static void main(String[] args) {
         System.out.println("====================================================");
-        System.out.println(">>> 5.二叉树的下一个结点");
+        System.out.println(">>> 6.二叉树的下一个结点");
         ch0006 ch0006 = new ch0006();
         System.out.println(">>> 普通二叉树");
         System.out.println("            1       ");
