@@ -1,4 +1,0 @@
-com\flock\influxdb\InfluxdbApplication.class
-com\flock\influxdb\config\InfluxDBConnect.class
-com\flock\influxdb\config\InfluxDBProperties.class
-com\flock\influxdb\config\InfluxDBConfiguration.class
