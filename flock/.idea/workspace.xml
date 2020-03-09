@@ -49,20 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="297">
-                <caret line="483" column="1" lean-forward="false" selection-start-line="483" selection-start-column="1" selection-end-line="483" selection-end-column="1" />
+              <first_editor relative-caret-position="365">
+                <caret line="553" column="1" lean-forward="false" selection-start-line="553" selection-start-column="1" selection-end-line="553" selection-end-column="1" />
                 <folding>
-                  <marker date="1583749694738" expanded="true" signature="3045:3056" ph=" { " />
-                  <marker date="1583749694738" expanded="true" signature="3071:3077" ph=" }" />
-                  <marker date="1583749694738" expanded="true" signature="6586:6597" ph=" { " />
-                  <marker date="1583749694738" expanded="true" signature="6612:6618" ph=" }" />
-                  <marker date="1583749694738" expanded="true" signature="8969:9087" ph="{...}" />
-                  <marker date="1583749694738" expanded="true" signature="9120:9131" ph=" { " />
-                  <marker date="1583749694738" expanded="true" signature="9145:9151" ph=" }" />
+                  <marker date="1583754452228" expanded="true" signature="3045:3056" ph=" { " />
+                  <marker date="1583754452228" expanded="true" signature="3071:3077" ph=" }" />
+                  <marker date="1583754452228" expanded="true" signature="6586:6597" ph=" { " />
+                  <marker date="1583754452228" expanded="true" signature="6612:6618" ph=" }" />
+                  <marker date="1583754452228" expanded="true" signature="8969:9087" ph="{...}" />
+                  <marker date="1583754452228" expanded="true" signature="9120:9131" ph=" { " />
+                  <marker date="1583754452228" expanded="true" signature="9145:9151" ph=" }" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -70,11 +70,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ch0011.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0011.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ch0010.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0010.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ch0009.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0009.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="48">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -120,10 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo/regex/src/main/java/SplitTest.java" />
-        <option value="$PROJECT_DIR$/demo/regex/src/main/java/SubstringTest.java" />
-        <option value="$PROJECT_DIR$/demo/regex/src/main/java/Test.java" />
-        <option value="$PROJECT_DIR$/services/pom.xml" />
         <option value="$PROJECT_DIR$/services/influxdb/pom.xml" />
         <option value="$PROJECT_DIR$/parent/pom.xml" />
         <option value="$PROJECT_DIR$/services/influxdb/src/main/java/InfluxdbApplication.java" />
@@ -168,9 +187,13 @@
         <option value="$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0007Test.java" />
         <option value="$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0008Test.java" />
         <option value="$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0008.java" />
-        <option value="$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/README.md" />
-        <option value="$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0009Test.java" />
         <option value="$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0009.java" />
+        <option value="$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0010.java" />
+        <option value="$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0010Test.java" />
+        <option value="$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0009Test.java" />
+        <option value="$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/README.md" />
+        <option value="$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0011.java" />
+        <option value="$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0011Test.java" />
       </list>
     </option>
   </component>
@@ -326,14 +349,6 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter002" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -409,7 +424,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../GitHub/hutool" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27842435" />
@@ -446,47 +461,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ch0009Test">
-    <configuration default="false" name="ch0005Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="chapter002.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="chapter002.ch0005Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithm" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ch0006Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="chapter002.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="chapter002.ch0006Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithm" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ch0011Test">
     <configuration default="false" name="ch0007Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -535,6 +510,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="chapter002.ch0009Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algorithm" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ch0010Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="chapter002.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="chapter002.ch0010Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algorithm" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ch0011Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="chapter002.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="chapter002.ch0011Test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -987,19 +1002,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.CMDBApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ch0005Test" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ch0006Test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ch0007Test" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ch0008Test" />
-      <item index="5" class="java.lang.String" itemvalue="Application.ch0009Test" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ch0007Test" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ch0008Test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ch0009Test" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ch0010Test" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ch0011Test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ch0009Test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ch0008Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ch0007Test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ch0006Test" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ch0005Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ch0011Test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ch0010Test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ch0009Test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ch0008Test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ch0007Test" />
       </list>
     </recent_temporary>
   </component>
@@ -1029,7 +1044,7 @@
       <workItem from="1582711622669" duration="4168000" />
       <workItem from="1582883228870" duration="6937000" />
       <workItem from="1583376058495" duration="43945000" />
-      <workItem from="1583738245053" duration="8816000" />
+      <workItem from="1583738245053" duration="12054000" />
     </task>
     <servers />
   </component>
@@ -1066,7 +1081,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168188000" />
+    <option name="totallyTimeSpent" value="171426000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1078,11 +1093,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19955157" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2690583" sideWeight="0.50427353" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1965812" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1100,7 +1116,7 @@
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34529147" sideWeight="0.49786323" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2690583" sideWeight="0.4957265" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18536325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1132,43 +1148,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/services/influxdb/src/main/java/com/flock/influxdb/InfluxdbApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/influxdb/src/test/java/com/flock/influxdb/InfluxdbApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/influxdb/src/main/java/com/flock/influxdb/config/InfluxDBConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/influxdb/src/main/java/com/flock/influxdb/config/InfluxDBProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1227,17 +1206,6 @@
         <state relative-caret-position="297">
           <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/develop/Java/jdk1.8.0_111/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="1862" column="22" lean-forward="false" selection-start-line="1862" selection-start-column="22" selection-end-line="1862" selection-end-column="22" />
-          <folding>
-            <element signature="e#88329#88330#0" expanded="false" />
-            <element signature="e#88386#88387#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1331,6 +1299,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="217" column="19" lean-forward="false" selection-start-line="217" selection-start-column="19" selection-end-line="217" selection-end-column="19" />
+          <folding>
+            <element signature="e#8033#8034#0" expanded="false" />
+            <element signature="e#8081#8082#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1509,22 +1481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0009Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0009.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0008.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
@@ -1533,22 +1489,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0009Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0010.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0009.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/Java/jdk1.8.0_111/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="2879" column="23" lean-forward="false" selection-start-line="2879" selection-start-column="23" selection-end-line="2879" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0010Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="83" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="12" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="297">
-            <caret line="483" column="1" lean-forward="false" selection-start-line="483" selection-start-column="1" selection-end-line="483" selection-end-column="1" />
+          <first_editor relative-caret-position="365">
+            <caret line="553" column="1" lean-forward="false" selection-start-line="553" selection-start-column="1" selection-end-line="553" selection-end-column="1" />
             <folding>
-              <marker date="1583749694738" expanded="true" signature="3045:3056" ph=" { " />
-              <marker date="1583749694738" expanded="true" signature="3071:3077" ph=" }" />
-              <marker date="1583749694738" expanded="true" signature="6586:6597" ph=" { " />
-              <marker date="1583749694738" expanded="true" signature="6612:6618" ph=" }" />
-              <marker date="1583749694738" expanded="true" signature="8969:9087" ph="{...}" />
-              <marker date="1583749694738" expanded="true" signature="9120:9131" ph=" { " />
-              <marker date="1583749694738" expanded="true" signature="9145:9151" ph=" }" />
+              <marker date="1583754452228" expanded="true" signature="3045:3056" ph=" { " />
+              <marker date="1583754452228" expanded="true" signature="3071:3077" ph=" }" />
+              <marker date="1583754452228" expanded="true" signature="6586:6597" ph=" { " />
+              <marker date="1583754452228" expanded="true" signature="6612:6618" ph=" }" />
+              <marker date="1583754452228" expanded="true" signature="8969:9087" ph="{...}" />
+              <marker date="1583754452228" expanded="true" signature="9120:9131" ph=" { " />
+              <marker date="1583754452228" expanded="true" signature="9145:9151" ph=" }" />
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/algorithm/src/test/java/chapter002/ch0011Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/algorithm/src/main/java/chapter002/ch0011.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
