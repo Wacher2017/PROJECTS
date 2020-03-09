@@ -386,3 +386,100 @@ public int pop() throws Exception {
     return out.pop();
 }
 ```
+### 8. 斐波那契数列
+
+>View Code: ch0008
+
+**题目描述**
+
+求斐波那契数列的第 n 项，n <= 39。
+
+f(n) = f(n - 2) + f(n - 1) (n > 1), 当 n = 0 时，f(n) = 0; 当 n = 1 时，f(n) = 1;
+
+**解题思路**
+
+如果使用递归求解，会重复计算一些子问题。
+例如，计算 f(4) 需要计算 f(3) 和 f(2)，计算 f(3) 需要计算 f(2) 和 f(1)，可以看到 f(2) 被重复计算了。
+
+递归是将一个问题划分成多个子问题求解，动态规划也是如此，但是动态规划会把子问题的解缓存起来，从而避免重复求解子问题。
+
+```java
+public int Fibonacci(int n) {
+    if (n <= 1)
+        return n;
+    int[] fib = new int[n + 1];
+    fib[1] = 1;
+    for (int i = 2; i <= n; i++)
+        fib[i] = fib[i - 1] + fib[i - 2];
+    return fib[n];
+}
+```
+考虑到第 i 项只与第 i-1 和第 i-2 项有关，因此只需要存储前两项的值就能求解第 i 项，从而将空间复杂度由 O(N) 降低为 O(1)。
+
+```java
+public int Fibonacci(int n) {
+    if (n <= 1)
+        return n;
+    int pre2 = 0, pre1 = 1;
+    int fib = 0;
+    for (int i = 2; i <= n; i++) {
+        fib = pre2 + pre1;
+        pre2 = pre1;
+        pre1 = fib;
+    }
+    return fib;
+}
+```
+由于待求解的 n 小于 40，因此可以将前 40 项的结果先进行计算，之后就能以 O(1) 时间复杂度得到第 n 项的值。
+
+```java
+public class Solution {
+
+    private int[] fib = new int[40];
+
+    public Solution() {
+        fib[1] = 1;
+        for (int i = 2; i < fib.length; i++)
+            fib[i] = fib[i - 1] + fib[i - 2];
+    }
+
+    public int Fibonacci(int n) {
+        return fib[n];
+    }
+}
+```
+### 9. 矩形覆盖
+
+>View Code: ch0009
+
+**题目描述**
+
+我们可以用 2*1 的小矩形横着或者竖着去覆盖更大的矩形。
+请问用 n 个 2*1 的小矩形无重叠地覆盖一个 2*n 的大矩形，总共有多少种方法？
+
+f(n) = f(n - 2) + f(n - 1) (n > 1), 当 n = 0 时，f(n) = 0; 当 n = 1 时，f(n) = 1;
+
+**解题思路**
+
+当 n 为 1 时，只有一种覆盖方法;  
+当 n 为 2 时，有两种覆盖方法;  
+要覆盖 2*n 的大矩形，可以先覆盖 2*1 的矩形，再覆盖 2*(n-1) 的矩形；或者先覆盖 2*2 的矩形，再覆盖 2*(n-2) 的矩形。
+而覆盖 2*(n-1) 和 2*(n-2) 的矩形可以看成子问题。  
+该问题的递推公式如下:
+
+f(n) = f(n - 1) + f(n - 2) (n > 1), 当 n = 1 时，f(n) = 1; 当 n = 2 时，f(n) = 2;
+
+```java
+public int RectCover(int n) {
+    if (n <= 2)
+        return n;
+    int pre2 = 1, pre1 = 2;
+    int result = 0;
+    for (int i = 3; i <= n; i++) {
+        result = pre2 + pre1;
+        pre2 = pre1;
+        pre1 = result;
+    }
+    return result;
+}
+```
