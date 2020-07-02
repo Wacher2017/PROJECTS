@@ -191,7 +191,7 @@ public class SqlConditionsUtil {
     //不支持含有between关键字的语句
     public static String buildConditions(String exp, String key) {
         ExpStatement es = parseStatement(exp, null);
-        //System.out.println(es);
+        System.out.println(es);
         StringBuilder result = new StringBuilder();
         if (es.getSingle() != null && CollectionUtils.isEmpty(es.getInSide())) {
             String atomExp = es.getSingle().getStatement();
@@ -306,7 +306,9 @@ public class SqlConditionsUtil {
 
     private static ExpStatement parseStatement(String exp, List<ExpStatement> nextList) {
         ExpStatement es = new ExpStatement();
-        exp = exp.trim();
+        if(StringUtils.isNotBlank(exp)) {
+            exp = exp.trim();
+        }
         List<String> subExp = bracketBoundary(exp);
         if (!CollectionUtils.isEmpty(subExp)) {
             List<ExpAtom> extraList = buildExtraExpList(exp, subExp);
@@ -339,6 +341,9 @@ public class SqlConditionsUtil {
     }
 
     private static List<String> bracketBoundary(String expression) {
+        if(StringUtils.isBlank(expression)) {
+            return Collections.emptyList();
+        }
         int stack = 0;
         int start = 0;
         List<String> result = new ArrayList<>();
@@ -430,22 +435,29 @@ public class SqlConditionsUtil {
             List<Map<String, Object>> inAnd = new ArrayList<>();
             for (String expression : expressions) {
                 Map<String, Object> map = new HashMap<>();
-                String[] pointSeparator = expression.split("\\.");
-                String key = ""; //属性所属的对象
-                List<String> objectPath = new ArrayList<>();
-                if (pointSeparator.length >= 2) {
-                    key = pointSeparator[pointSeparator.length - 2];
-                    for (int i = pointSeparator.length - 2; i >= 0; i--) {
-                        objectPath.add(pointSeparator[i]);
-                    }
-                }
-                Collections.reverse(objectPath);
-                map.put("path", objectPath);
-                if (StringUtils.isNotBlank(key)) {
-                    map.put(key, pointSeparator[pointSeparator.length - 1]);
+                String[] keySeparator = expression.split("\\s*(=|<>|!=|>|<|>=|<=|\\sin)\\s*");
+                if(keySeparator.length == 2 && !keySeparator[1].contains("'") && !keySeparator[1].contains("\"")
+                        && keySeparator[1].contains(".")) {
+                    //对象之间关系条件
+                    map.put("_association", expression);
                 } else {
-                    //默认为用户属性
-                    map.put("user", pointSeparator[pointSeparator.length - 1]);
+                    String[] pointSeparator = keySeparator[0].split("\\.");
+                    String key = ""; //属性所属的对象
+                    List<String> objectPath = new ArrayList<>();
+                    if (pointSeparator.length >= 2) {
+                        key = pointSeparator[pointSeparator.length - 2];
+                        for (int i = pointSeparator.length - 2; i >= 0; i--) {
+                            objectPath.add(pointSeparator[i]);
+                        }
+                    }
+                    Collections.reverse(objectPath);
+                    map.put("path", objectPath);
+                    if (StringUtils.isNotBlank(key)) {
+                        map.put(key, expression.substring(expression.indexOf(key) + key.length() + 1, expression.length()));
+                    } else {
+                        //默认为用户属性
+                        map.put("user", expression);
+                    }
                 }
                 inAnd.add(map);
             }
@@ -502,13 +514,13 @@ public class SqlConditionsUtil {
     }
 
     public static void main(String[] arg) {
-        String str = "ci_type = \"IBMFlash\" and ci_label = 'IBM Flash 存储' and resource_type in ('Client', 'Database', 'Oracle') and shen in(12, 345, 654) and  aaH=\"aa\" and bb>32 and ((cc = \"cc\" and nn=\"99\") or (dd < 123 and mm=\"55\")) and ee <>\"22\" and ff between 1 and 100 and INET_ATON(`address`) between INET_ATON('127.0.0.1') and INET_ATON('127.0.0.6')";
+        /*String str = "ci_type = \"IBMFlash\" and ci_label = 'IBM Flash 存储' and resource_type in ('Client', 'Database', 'Oracle') and shen in(12, 345, 654) and  aaH=\"aa\" and bb>32 and ((cc = \"cc\" and nn=\"99\") or (dd < 123 and mm=\"55\")) and ee <>\"22\" and ff between 1 and 100 and INET_ATON(`address`) between INET_ATON('127.0.0.1') and INET_ATON('127.0.0.6')";
         String result = parseWhereDesc(str, "t1");
         System.out.println("================================");
         System.out.println(result);
-        System.out.println();
+        System.out.println();*/
         System.out.println("================================");
-        String exp = "(user.aa = 123 or user.bb = 'wacher') and user.cc = 324 and user.person.dd = '123' or user.yy = '789' and (role.ee in (1,2,3) and user.role.ff in('11','22')) and (tt = 123) and group.gg in (6,7,8) or groupRole.hh < 20 and ((ii = 1 or jj = 2) and (kk = 3 or ll = 4)) and (mm = 1 and (nn = 3 or oo = 4)) and pp=1";
+        String exp = "(user.aa = 123 or user.bb = 'wacher') and user.cc = user2.cc and user3.cc = user4.cc and user.dd = 'user2.dd' and user.name is not null and user.person.dd = '123' or user.yy = '789' and (role.ee in (1.1,'2.2',3) and user.role.ff in('11','22')) and (tt = 123) and group.gg in (6,7,8) or groupRole.hh < 20 and ((ii = 1 or jj = 2) and (kk = 3 or ll = 4)) and (mm = 1 and (nn = 3 or oo = 4)) and pp=1";
         //String exp = "(user.aa = 123 or user.bb = 'wacher') and user.cc = 324 and user.person.dd = '123' or user.yy = '789' and (role.ee in (1,2,3) and user.role.ff in('11','22')) and (tt = 123) and group.gg in (6,7,8) or groupRole.hh < 20 and ((ii = 1 or jj = 2) and (kk = 3 or ll = 4)) and (mm = 1 and (nn = 3 or oo = 4))";
         //String exp = "user.aa = 123 or user.bb = 'wacher' and user.cc = 324 and role.dd = 234 and role.ff = 968 and group.gg = 'wachergg'";
         //String exp = "1=1 and user.aa = 123";
@@ -516,6 +528,9 @@ public class SqlConditionsUtil {
         //String exp = "(user.aa = 123 or user.bb = 'wacher')";
         //String exp = "(user.aa = 123 or (user.bb = 'wacher' and (role.cc = 'ccc'))) and role.dd = 1";
         //各个对象之间的关系这里解析无法描述，使用的接口可扩展对象的“且”“或”关系
+        String filter0 = buildConditions(exp, "_association");
+        System.out.println(filter0);
+        System.out.println();
         String filter = buildConditions(exp, "user");
         System.out.println(filter);
     }

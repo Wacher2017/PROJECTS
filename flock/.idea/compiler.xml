@@ -17,6 +17,8 @@
         <module name="rabbitmq" />
         <module name="reflect" />
         <module name="regex" />
+        <module name="springel" />
+        <module name="zother" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -36,6 +38,8 @@
       <module name="reflect" target="1.8" />
       <module name="regex" target="1.8" />
       <module name="services" target="1.8" />
+      <module name="springel" target="1.8" />
+      <module name="zother" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

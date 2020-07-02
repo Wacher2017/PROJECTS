@@ -18,6 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/demo/reflect/reflect.iml" filepath="$PROJECT_DIR$/demo/reflect/reflect.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/regex/regex.iml" filepath="$PROJECT_DIR$/demo/regex/regex.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/springel/springel.iml" filepath="$PROJECT_DIR$/demo/springel/springel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/zother/zother.iml" filepath="$PROJECT_DIR$/demo/zother/zother.iml" />
     </modules>
   </component>
 </project>
