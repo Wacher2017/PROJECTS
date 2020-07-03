@@ -51,3 +51,123 @@ Consider defining a bean of type 'com.lms.sample.service.SampleService' in your 
 2020-07-03 16:30:42.184 [http-nio-8080-exec-3] [com.lms.api.controller.LoggingController:18] INFO : The default level of Spring Boot is info
 2020-07-03 16:30:48.055 [http-nio-8080-exec-4] [com.lms.api.controller.LoggingController:17] INFO : level： trace < debug < info < warn < error
 2020-07-03 16:30:48.056 [http-nio-8080-exec-4] [com.lms.api.controller.LoggingController:18] INFO : The default level of Spring Boot is info
+2020-07-03 17:02:12.370 [main] [org.springframework.boot.StartupInfoLogger:50] INFO : Starting LmsApplication on win7-PC with PID 18200 (D:\workspace\wacher\PROJECTS\LMS\lms-api\target\classes started by win7 in D:\workspace\wacher\PROJECTS\LMS)
+2020-07-03 17:02:12.388 [main] [org.springframework.boot.SpringApplication:675] INFO : No active profile set, falling back to default profiles: default
+2020-07-03 17:02:13.683 [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] INFO : Tomcat initialized with port(s): 80 (http)
+2020-07-03 17:02:13.700 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing ProtocolHandler ["http-nio-80"]
+2020-07-03 17:02:13.710 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting service [Tomcat]
+2020-07-03 17:02:13.711 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-07-03 17:02:13.719 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\Git\cmd;E:\develop\Java\jdk1.8.0_111\bin;E:\develop\Java\jdk1.8.0_111\jre\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\develop\apache-maven-3.1.0\bin;E:\develop\nodejs\;C:\Program Files\TortoiseGit\bin;E:\develop\gradle-6.5\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\win7\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;C:\Program Files\MySQL\MySQL Server 5.7\bin;.]
+2020-07-03 17:02:13.849 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing Spring embedded WebApplicationContext
+2020-07-03 17:02:13.850 [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:296] INFO : Root WebApplicationContext: initialization completed in 1416 ms
+2020-07-03 17:02:14.099 [main] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171] INFO : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 17:02:14.236 [main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:61] INFO : Adding welcome page template: index
+2020-07-03 17:02:14.301 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting ProtocolHandler ["http-nio-80"]
+2020-07-03 17:02:14.316 [main] [org.apache.juli.logging.DirectJDKLog:175] ERROR: Failed to start component [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1004)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.lms.api.LmsApplication.main(LmsApplication.java:13)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001)
+	... 14 common frames omitted
+2020-07-03 17:02:14.322 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Pausing ProtocolHandler ["http-nio-80"]
+2020-07-03 17:02:14.323 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Stopping service [Tomcat]
+2020-07-03 17:02:14.331 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-07-03 17:02:14.331 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Stopping ProtocolHandler ["http-nio-80"]
+2020-07-03 17:02:14.331 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Destroying ProtocolHandler ["http-nio-80"]
+2020-07-03 17:02:14.333 [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:142] INFO : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-03 17:02:14.337 [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42] ERROR: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+2020-07-03 17:02:14.340 [main] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:208] INFO : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-03 17:03:33.331 [main] [org.springframework.boot.StartupInfoLogger:50] INFO : Starting LmsApplication on win7-PC with PID 20096 (D:\workspace\wacher\PROJECTS\LMS\lms-api\target\classes started by win7 in D:\workspace\wacher\PROJECTS\LMS)
+2020-07-03 17:03:33.345 [main] [org.springframework.boot.SpringApplication:675] INFO : No active profile set, falling back to default profiles: default
+2020-07-03 17:03:34.857 [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] INFO : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 17:03:34.875 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-03 17:03:34.887 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting service [Tomcat]
+2020-07-03 17:03:34.887 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-07-03 17:03:34.893 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\Git\cmd;E:\develop\Java\jdk1.8.0_111\bin;E:\develop\Java\jdk1.8.0_111\jre\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\develop\apache-maven-3.1.0\bin;E:\develop\nodejs\;C:\Program Files\TortoiseGit\bin;E:\develop\gradle-6.5\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\win7\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;C:\Program Files\MySQL\MySQL Server 5.7\bin;.]
+2020-07-03 17:03:35.015 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing Spring embedded WebApplicationContext
+2020-07-03 17:03:35.016 [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:296] INFO : Root WebApplicationContext: initialization completed in 1635 ms
+2020-07-03 17:03:35.258 [main] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171] INFO : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 17:03:35.399 [main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:61] INFO : Adding welcome page template: index
+2020-07-03 17:03:35.471 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-03 17:03:35.499 [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] INFO : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 17:03:35.502 [main] [org.springframework.boot.StartupInfoLogger:59] INFO : Started LmsApplication in 2.633 seconds (JVM running for 3.102)
+2020-07-03 17:03:51.712 [http-nio-8080-exec-1] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 17:03:51.712 [http-nio-8080-exec-1] [org.springframework.web.servlet.FrameworkServlet:524] INFO : Initializing Servlet 'dispatcherServlet'
+2020-07-03 17:03:51.719 [http-nio-8080-exec-1] [org.springframework.web.servlet.FrameworkServlet:546] INFO : Completed initialization in 6 ms
+2020-07-03 17:03:51.737 [http-nio-8080-exec-1] [com.lms.api.controller.LoginController:15] INFO : =====login:
+2020-07-03 17:03:55.398 [http-nio-8080-exec-2] [com.lms.api.controller.LoginController:15] INFO : =====login:
+2020-07-03 17:11:03.187 [main] [org.springframework.boot.StartupInfoLogger:50] INFO : Starting LmsApplication on win7-PC with PID 22956 (D:\workspace\wacher\PROJECTS\LMS\lms-api\target\classes started by win7 in D:\workspace\wacher\PROJECTS\LMS)
+2020-07-03 17:11:03.214 [main] [org.springframework.boot.SpringApplication:675] INFO : No active profile set, falling back to default profiles: default
+2020-07-03 17:11:04.821 [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] INFO : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 17:11:04.838 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-03 17:11:04.848 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting service [Tomcat]
+2020-07-03 17:11:04.849 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-07-03 17:11:04.856 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\Git\cmd;E:\develop\Java\jdk1.8.0_111\bin;E:\develop\Java\jdk1.8.0_111\jre\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\develop\apache-maven-3.1.0\bin;E:\develop\nodejs\;C:\Program Files\TortoiseGit\bin;E:\develop\gradle-6.5\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\win7\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;C:\Program Files\MySQL\MySQL Server 5.7\bin;.]
+2020-07-03 17:11:04.979 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing Spring embedded WebApplicationContext
+2020-07-03 17:11:04.980 [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:296] INFO : Root WebApplicationContext: initialization completed in 1723 ms
+2020-07-03 17:11:05.217 [main] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171] INFO : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 17:11:05.339 [main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:61] INFO : Adding welcome page template: index
+2020-07-03 17:11:05.398 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-03 17:11:05.423 [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] INFO : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 17:11:05.428 [main] [org.springframework.boot.StartupInfoLogger:59] INFO : Started LmsApplication in 2.693 seconds (JVM running for 3.156)
+2020-07-03 17:11:12.218 [http-nio-8080-exec-1] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 17:11:12.219 [http-nio-8080-exec-1] [org.springframework.web.servlet.FrameworkServlet:524] INFO : Initializing Servlet 'dispatcherServlet'
+2020-07-03 17:11:12.223 [http-nio-8080-exec-1] [org.springframework.web.servlet.FrameworkServlet:546] INFO : Completed initialization in 4 ms
+2020-07-03 17:11:12.239 [http-nio-8080-exec-1] [com.lms.api.controller.LoginController:15] INFO : =====login:
+2020-07-03 17:11:28.581 [http-nio-8080-exec-2] [com.lms.api.controller.LoginController:15] INFO : =====login:
+2020-07-03 17:14:13.506 [main] [org.springframework.boot.StartupInfoLogger:50] INFO : Starting LmsApplication on win7-PC with PID 15312 (D:\workspace\wacher\PROJECTS\LMS\lms-api\target\classes started by win7 in D:\workspace\wacher\PROJECTS\LMS)
+2020-07-03 17:14:13.522 [main] [org.springframework.boot.SpringApplication:675] INFO : No active profile set, falling back to default profiles: default
+2020-07-03 17:14:15.160 [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] INFO : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 17:14:15.178 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-03 17:14:15.188 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting service [Tomcat]
+2020-07-03 17:14:15.188 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-07-03 17:14:15.195 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\Git\cmd;E:\develop\Java\jdk1.8.0_111\bin;E:\develop\Java\jdk1.8.0_111\jre\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\develop\apache-maven-3.1.0\bin;E:\develop\nodejs\;C:\Program Files\TortoiseGit\bin;E:\develop\gradle-6.5\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\win7\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;C:\Program Files\MySQL\MySQL Server 5.7\bin;.]
+2020-07-03 17:14:15.314 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing Spring embedded WebApplicationContext
+2020-07-03 17:14:15.315 [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:296] INFO : Root WebApplicationContext: initialization completed in 1749 ms
+2020-07-03 17:14:15.551 [main] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171] INFO : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 17:14:15.672 [main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:61] INFO : Adding welcome page template: index
+2020-07-03 17:14:15.731 [main] [org.apache.juli.logging.DirectJDKLog:173] INFO : Starting ProtocolHandler ["http-nio-8080"]
+2020-07-03 17:14:15.758 [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] INFO : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 17:14:15.763 [main] [org.springframework.boot.StartupInfoLogger:59] INFO : Started LmsApplication in 2.725 seconds (JVM running for 3.192)
+2020-07-03 17:14:23.553 [http-nio-8080-exec-1] [org.apache.juli.logging.DirectJDKLog:173] INFO : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 17:14:23.553 [http-nio-8080-exec-1] [org.springframework.web.servlet.FrameworkServlet:524] INFO : Initializing Servlet 'dispatcherServlet'
+2020-07-03 17:14:23.557 [http-nio-8080-exec-1] [org.springframework.web.servlet.FrameworkServlet:546] INFO : Completed initialization in 4 ms
