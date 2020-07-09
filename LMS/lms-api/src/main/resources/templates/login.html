@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- 360浏览器急速模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>登录LMS系统</title>
+</head>
+<body>
+<form>
+    <h4>登录：</h4>
+    <input type="text" name="username" placeholder="用户名" value="admin"    />
+    <input type="password" name="password" placeholder="密码" value="admin123" />
+    <input type="text" name="validateCode" placeholder="验证码" maxlength="5" />
+    <input type="checkbox" id="rememberme" name="rememberme"> <label for="rememberme">记住我</label>
+    <button id="btnSubmit" data-loading="正在验证登录，请稍后...">登录</button>
+</form>
+</body>
+</html>

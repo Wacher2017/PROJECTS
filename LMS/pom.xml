@@ -15,6 +15,7 @@
 		<module>lms-api</module>
 		<module>lms-sample</module>
 		<module>lms-framework</module>
+		<module>lms-system</module>
 	</modules>
 
 	<properties>
@@ -22,7 +23,13 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<springboot.version>2.1.2.RELEASE</springboot.version>
+		<kaptcha.version>2.3.2</kaptcha.version>
+		<shiro.version>1.5.3</shiro.version>
+		<thymeleaf.extras.shiro.version>2.0.0</thymeleaf.extras.shiro.version>
 		<fastjson.version>1.2.70</fastjson.version>
+		<jackson-databind.version>2.9.8</jackson-databind.version>
+		<commons.io.version>2.5</commons.io.version>
+		<bitwalker.version>1.19</bitwalker.version>
 		<lombok.version>[1.0.0,9.99.99]</lombok.version>
 	</properties>
 
@@ -44,18 +51,91 @@
 				<scope>compile</scope>
 			</dependency>
 
+			<!--验证码 -->
+			<dependency>
+				<groupId>com.github.penggle</groupId>
+				<artifactId>kaptcha</artifactId>
+				<version>${kaptcha.version}</version>
+			</dependency>
+
+			<!--Shiro核心框架 -->
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-core</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+
+			<!-- Shiro使用Srping框架 -->
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-spring</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+
+			<!-- Shiro使用EhCache缓存框架 -->
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-ehcache</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+
+			<!-- thymeleaf模板引擎和shiro框架的整合 -->
+			<dependency>
+				<groupId>com.github.theborakompanioni</groupId>
+				<artifactId>thymeleaf-extras-shiro</artifactId>
+				<version>${thymeleaf.extras.shiro.version}</version>
+			</dependency>
+
+			<!-- JSON工具类 -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson-databind.version}</version>
+			</dependency>
+
+			<!-- 阿里JSON解析器 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+
+			<!--io常用工具类 -->
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>${commons.io.version}</version>
+			</dependency>
+
+			<!-- 解析客户端操作系统、浏览器等 -->
+			<dependency>
+				<groupId>eu.bitwalker</groupId>
+				<artifactId>UserAgentUtils</artifactId>
+				<version>${bitwalker.version}</version>
+			</dependency>
+
+			<!-- 公用模块 -->
 			<dependency>
 				<groupId>com.demo</groupId>
 				<artifactId>lms-common</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 
+			<!-- 核心模块 -->
 			<dependency>
 				<groupId>com.demo</groupId>
 				<artifactId>lms-framework</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 
+			<!-- 系统模块 -->
+			<dependency>
+				<groupId>com.demo</groupId>
+				<artifactId>lms-system</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<!-- 实例模块 -->
 			<dependency>
 				<groupId>com.demo</groupId>
 				<artifactId>lms-sample</artifactId>
