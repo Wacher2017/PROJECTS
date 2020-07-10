@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<springboot.version>2.1.2.RELEASE</springboot.version>
+		<findbugs.annotation.version>3.0.1</findbugs.annotation.version>
 		<kaptcha.version>2.3.2</kaptcha.version>
 		<shiro.version>1.5.3</shiro.version>
 		<thymeleaf.extras.shiro.version>2.0.0</thymeleaf.extras.shiro.version>
@@ -41,6 +42,12 @@
 				<version>${springboot.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.code.findbugs</groupId>
+				<artifactId>annotations</artifactId>
+				<version>${findbugs.annotation.version}</version>
 			</dependency>
 
 			<!-- lombok -->
