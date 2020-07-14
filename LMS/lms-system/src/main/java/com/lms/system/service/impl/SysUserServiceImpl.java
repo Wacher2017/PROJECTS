@@ -1,12 +1,15 @@
 package com.lms.system.service.impl;
 
+import com.lms.common.core.context.StaticDataContext;
 import com.lms.common.enums.UserStatus;
 import com.lms.system.domain.SysUser;
 import com.lms.system.domain.SysUserRole;
 import com.lms.system.service.ISysUserService;
+import org.apache.commons.collections.MapUtils;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * 用户 业务层处理
@@ -43,17 +46,50 @@ public class SysUserServiceImpl implements ISysUserService {
 
     @Override
     public SysUser selectUserByPhoneNumber(String phoneNumber) {
-        return null;
+        Map<String, Object> map = StaticDataContext.getStaticDataContext();
+        if (MapUtils.isNotEmpty(StaticDataContext.getStaticDataContext())
+                && map.containsKey("user") && map.get("user") != null) {
+            //noinspection unchecked
+            List<SysUser> userList = (List<SysUser>) map.get("user");
+            return userList.stream()
+                    .filter(sysUser -> phoneNumber.equals(sysUser.getMobile()))
+                    .findFirst()
+                    .orElse(null);
+        } else {
+            return null;
+        }
     }
 
     @Override
     public SysUser selectUserByEmail(String email) {
-        return null;
+        Map<String, Object> map = StaticDataContext.getStaticDataContext();
+        if (MapUtils.isNotEmpty(StaticDataContext.getStaticDataContext())
+                && map.containsKey("user") && map.get("user") != null) {
+            //noinspection unchecked
+            List<SysUser> userList = (List<SysUser>) map.get("user");
+            return userList.stream()
+                    .filter(sysUser -> email.equals(sysUser.getEmail()))
+                    .findFirst()
+                    .orElse(null);
+        } else {
+            return null;
+        }
     }
 
     @Override
     public SysUser selectUserById(Long userId) {
-        return null;
+        Map<String, Object> map = StaticDataContext.getStaticDataContext();
+        if (MapUtils.isNotEmpty(StaticDataContext.getStaticDataContext())
+                && map.containsKey("user") && map.get("user") != null) {
+            //noinspection unchecked
+            List<SysUser> userList = (List<SysUser>) map.get("user");
+            return userList.stream()
+                    .filter(sysUser -> userId.equals(sysUser.getUserId()))
+                    .findFirst()
+                    .orElse(null);
+        } else {
+            return null;
+        }
     }
 
     @Override
@@ -63,22 +99,41 @@ public class SysUserServiceImpl implements ISysUserService {
 
     @Override
     public int deleteUserById(Long userId) {
-        return 0;
+        SysUser user = selectUserById(userId);
+        if(user == null) return 0;
+        user.setStatus("1");
+        user.setDelFlag("2");
+        return updateUserInfo(user);
     }
 
     @Override
     public int deleteUserByIds(String ids) throws Exception {
-        return 0;
+       return 0;
     }
 
     @Override
     public int insertUser(SysUser user) {
-        return 0;
+        try {
+            List<SysUser> userList = new ArrayList<>();
+            Map<String, Object> map = StaticDataContext.getStaticDataContext();
+            if (MapUtils.isNotEmpty(StaticDataContext.getStaticDataContext())
+                    && map.containsKey("user") && map.get("user") != null) {
+                //noinspection unchecked
+                userList = (List<SysUser>) map.get("user");
+            }
+            user.setUserId(userList.size() + 1L);
+            userList.add(user);
+            map.put("user", userList);
+            StaticDataContext.setStaticDataContext(map);
+            return 1;
+        } catch (Exception e) {
+            return 0;
+        }
     }
 
     @Override
     public boolean registerUser(SysUser user) {
-        return false;
+        return insertUser(user) > 0;
     }
 
     @Override
