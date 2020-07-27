@@ -1,0 +1,6 @@
+
+> fibers@5.0.0 install D:\workspace\wacher\PROJECTS\LMS-separate\lms-ui\node_modules\fibers
+> node build.js || nodejs build.js
+
+
+D:\workspace\wacher\PROJECTS\LMS-separate\lms-ui\node_modules\fibers>if not defined npm_config_node_gyp (node "E:\develop\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild --release )  else (node "E:\develop\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js" rebuild --release ) 

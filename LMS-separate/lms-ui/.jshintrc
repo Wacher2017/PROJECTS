@@ -1,0 +1,12 @@
+{
+    "esversion": 6,
+    "undef": true,
+    "unused": true,
+    "node": true,
+    "module": true,
+    "globals": {
+        "module" : true,
+        "require": true,
+        "location": true
+    }
+}
