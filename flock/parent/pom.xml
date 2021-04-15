@@ -28,7 +28,7 @@
         <common-collections.version>3.2.1</common-collections.version>
         <commons-io.version>2.6</commons-io.version>
         <jackson.version>2.10.1</jackson.version>
-        <rabbitmq.version>4.1.0</rabbitmq.version>
+        <rabbitmq.version>4.8.0</rabbitmq.version>
         <disruptor.version>3.3.2</disruptor.version>
         <influxdb.version>2.15</influxdb.version>
         <flock-common.version>1.0</flock-common.version>
