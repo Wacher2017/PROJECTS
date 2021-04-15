@@ -21,7 +21,7 @@ public class SqlConditionsUtil {
 
     private static final String CONDITION_SPLIT = "(and|or)";
 
-    private static final String SQL_CONDITION_REG = "([\\s*\\(\\s*\\(\\s*]*)?([\\w\\(]*[\\`]*[\\w\\.]+[\\`]*[\\)]*)\\s*(?:(!=|<>|>=|<=|=|>|<|\\snot like\\s|\\slike\\s|\\snot in\\s*\\(\\s*[\\'\\\"\\,\\u4e00-\\u9fa5\\w\\s]*\\s*|\\sin\\s*\\(\\s*[\\'\\\"\\,\\u4e00-\\u9fa5\\w\\s]*\\s*|\\sbetween\\s[\\(\\)\\'\\\"\\.\\u4e00-\\u9fa5\\w]+\\s(?:and)\\s|\\sis not\\s|\\sis\\s))\\s*([\\w]*[\\(\\'\\\"].*?[\\'\\\"\\)]|[-]?\\d+|null)*([\\s*\\)\\s*\\)\\s*]*)?(?=[\\s])[\\s]*(and|or)?";
+    private static final String SQL_CONDITION_REG = "([\\s*\\(\\s*\\(\\s*]*)?([\\w\\(]*[\\`]*[\\w\\.]+[\\`]*[\\)]*)\\s*(?:(!=|<>|>=|<=|=|>|<|\\snot like\\s|\\slike[\\sBINARY]*\\s|\\snot in\\s*\\(\\s*[\\'\\\"\\,\\-\\u4e00-\\u9fa5\\w\\s]*\\s*|\\sin\\s*\\(\\s*[\\'\\\"\\,\\-\\u4e00-\\u9fa5\\w\\s]*\\s*|\\sbetween\\s[\\(\\)\\'\\\"\\.\\-\\u4e00-\\u9fa5\\w]+\\s(?:and)\\s|\\sis not\\s|\\sis\\s))\\s*([\\w]*[\\(\\'\\\"].*?[\\'\\\"\\)]|[-]?\\d+|null|true|false)*([\\s*\\)\\s*\\)\\s*]*)?(?=[\\s])[\\s]*(and|or)?";
 
     public static final String ONE_SPACE = " ";
 
