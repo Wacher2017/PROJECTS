@@ -29,7 +29,7 @@
 		<thymeleaf.extras.shiro.version>2.0.0</thymeleaf.extras.shiro.version>
 		<fastjson.version>1.2.70</fastjson.version>
 		<jackson-databind.version>2.9.8</jackson-databind.version>
-		<commons.io.version>2.5</commons.io.version>
+		<commons.io.version>2.7</commons.io.version>
 		<commons.collections.version>3.2.2</commons.collections.version>
 		<bitwalker.version>1.19</bitwalker.version>
 		<lombok.version>[1.0.0,9.99.99]</lombok.version>
